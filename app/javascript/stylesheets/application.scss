@@ -1,3 +1,18 @@
 @import '~bulmaswatch/yeti/_variables';
 @import '~bulma';
 @import '~bulmaswatch/yeti/_overrides';
+$fa-font-path: "~font-awesome/fonts/";
+@import "~font-awesome/scss/font-awesome";
+
+// --------------------------------------------------------------------------
+
+@import url("https://fonts.googleapis.com/css?family=Capriola");
+
+.navbar-brand a {
+  font-family: "Capriola";
+  font-size: 1.2em;
+}
+
+.button {
+  border-radius: 2px;
+}
