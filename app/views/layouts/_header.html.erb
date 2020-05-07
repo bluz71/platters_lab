@@ -20,7 +20,9 @@
       <a class="navbar-item">
         Albums
       </a>
-
+    </div>
+    <div class="navbar-end">
+    <% if signed_in? %>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           <div>
@@ -30,8 +32,7 @@
             user
           </div>
         </a>
-
-        <div class="navbar-dropdown">
+        <div class="navbar-dropdown is-right">
           <a class="navbar-item">
             <div>
               <span class="icon">
@@ -48,27 +49,24 @@
               Account
             </div>
           </a>
-          <a class="navbar-item">
+          <%= link_to log_out_path, class: "navbar-item" do %>
             <div>
               <span class="icon">
                 <%= fa_icon("sign-out") %>
               </span>
               Logout
             </div>
-          </a>
+          <% end %>
         </div>
       </div>
-    </div>
-
-    <div class="navbar-end">
-      <a class="navbar-item">
-        Log in
-      </a>
+    <% else %>
+      <%= link_to "Log in", log_in_path, class: "navbar-item" %>
       <div class="navbar-item">
         <a class="button is-success">
           Sign up
         </a>
       </div>
-    </div>
+    <% end %>
+      </div>
   </div>
 </nav>
