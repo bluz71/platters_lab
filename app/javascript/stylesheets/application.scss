@@ -1,3 +1,5 @@
+$footer-padding: 1rem;
+
 @import '~bulmaswatch/yeti/_variables';
 @import '~bulma';
 @import '~bulmaswatch/yeti/_overrides';
@@ -8,12 +10,55 @@ $fa-font-path: "~font-awesome/fonts/";
 
 @import url("https://fonts.googleapis.com/css?family=Capriola");
 
+// Colors.
+$grey-dark:        #515151;
+$grey-mid-dark:    #777;
+$grey-mid-light:   #eee;
+$grey-light:       #f8f8f8;
+$black-text:       #111;
+$black-background: #333;
+$green-yeti:       #3c9a5f;
+$green-shade:      #9bd8b2;
+$red-yeti:         #f04124;
+
+// Yeti customizations.
+.button {
+  border-radius: 2px;
+}
+
+// Sticky footer.
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main {
+  flex: 1;
+}
+
 .navbar-brand a {
   font-family: "Capriola";
   font-size: 1.15em;
   font-weight: 600;
 }
 
-.button {
-  border-radius: 2px;
+.footer {
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    li {
+      display: inline;
+      margin-right: 1em;
+
+      a {
+        color: $grey-dark;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
 }
