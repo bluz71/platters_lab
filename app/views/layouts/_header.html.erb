@@ -1,17 +1,17 @@
-<nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top is-dark">
   <div class="navbar-brand">
     <%= link_to root_path, class: "navbar-item" do %>
       <%= image_pack_tag "platters-white.svg", height: "28", width: "36" %> platters
     <% end %>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+    <a role="button" class="navbar-burger burger" data-target="collapse">
+      <span></span>
+      <span></span>
+      <span></span>
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="collapse" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item">
         Arists
@@ -23,7 +23,7 @@
     </div>
     <div class="navbar-end">
     <% if signed_in? %>
-      <div class="navbar-item has-dropdown is-hoverable">
+      <div id="navbar-dropdown-target" class="navbar-item has-dropdown">
         <a class="navbar-link">
           <div>
             <span class="icon">
