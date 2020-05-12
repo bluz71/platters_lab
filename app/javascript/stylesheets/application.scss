@@ -24,7 +24,8 @@ $green-shade:      #9bd8b2;
 $red-yeti:         #f04124;
 
 // Yeti customizations.
-.button {
+.button,
+.notification {
   border-radius: 2px;
 }
 
@@ -65,4 +66,15 @@ body {
       }
     }
   }
+}
+
+.flash-messages {
+  position: fixed;
+  z-index: 9999;
+  top: 2rem;
+  left: 2rem;
+}
+
+.notification {
+  width: 75vw;
 }

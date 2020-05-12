@@ -13,8 +13,10 @@ class SamplePagesController < ApplicationController
   end
 
   def about
+    flash.now[:notice] = "About notice message"
   end
 
   def details
+    flash.now[:alert] = "Details alert message"
   end
 end

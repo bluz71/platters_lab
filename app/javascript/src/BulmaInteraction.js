@@ -5,9 +5,14 @@ class BulmaInteraction {
 
   setEventHandlers () {
     $(document).on('click', '.navbar-burger', this.navbarBurgerClick)
-    $(document).on('click', '#navbar-dropdown-target', this.navbarDropdownClick)
+    $(document).on('click', '.navbar-dropdown-target', this.navbarDropdownClick)
     $(document).on('click', this.windowClick)
     $(document).on('keyup', this.keyPress)
+    $(document).on(
+      'click',
+      '.notification-delete-target',
+      this.notificationDeleteClick
+    )
   }
 
   navbarBurgerClick (event) {
@@ -22,16 +27,20 @@ class BulmaInteraction {
   }
 
   windowClick (event) {
-    $('#navbar-dropdown-target').removeClass('is-active')
+    $('.navbar-dropdown-target').removeClass('is-active')
   }
 
-  keyPress = (event) => {
+  keyPress = event => {
     // Close menus when the escape key is pressed.
     if (event.which === 27) {
-      $('#navbar-dropdown-target').removeClass('is-active')
+      $('.navbar-dropdown-target').removeClass('is-active')
       $('.navbar-burger').removeClass('is-active')
       $('.navbar-menu').removeClass('is-active')
     }
+  }
+
+  notificationDeleteClick (event) {
+    $(event.currentTarget).parent().remove()
   }
 }
 

@@ -12,6 +12,19 @@
 
   <body class="has-navbar-fixed-top">
     <%= render "layouts/header" %>
+    <div class="flash-messages">
+      <% flash.each do |key, message| %>
+        <div class="notification is-<%= key == "alert" ? "danger" : "link" %>">
+          <button class="delete notification-delete-target"></button>
+          <% if key == "alert" %>
+            <%= fa_icon "warning fw" %>
+          <% elsif key == "notice" || key == "success" %>
+            <%= fa_icon "info-circle fw" %>
+          <% end %>
+          <%= message %>
+        </div>
+      <% end %>
+    </div>
     <div id="main">
       <%= yield %>
     </div>
