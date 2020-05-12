@@ -13,11 +13,11 @@
 
   <div id="collapse" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a class="navbar-item has-text-weight-semibold">
         Arists
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item has-text-weight-semibold">
         Albums
       </a>
     </div>
@@ -25,7 +25,7 @@
     <% if signed_in? %>
       <div id="navbar-dropdown-target" class="navbar-item has-dropdown">
         <a class="navbar-link">
-          <div>
+          <div class="has-text-weight-semibold">
             <span class="icon">
               <%= fa_icon("user") %>
             </span>
@@ -60,9 +60,9 @@
         </div>
       </div>
     <% else %>
-      <%= link_to "Log in", log_in_path, class: "navbar-item" %>
-      <div class="navbar-item">
-        <a class="button is-success">
+      <%= link_to "Log in", log_in_path, class: "navbar-item has-text-weight-semibold" %>
+      <div class="navbar-item has-text-weight-semibold">
+        <a class="button is-link">
           Sign up
         </a>
       </div>

@@ -4,18 +4,10 @@ class BulmaInteraction {
   }
 
   setEventHandlers () {
-    $('.navbar-burger').click(this.navbarBurgerClick)
-    $('#navbar-dropdown-target').click(this.navbarDropdownClick)
+    $(document).on('click', '.navbar-burger', this.navbarBurgerClick)
+    $(document).on('click', '#navbar-dropdown-target', this.navbarDropdownClick)
     $(document).on('click', this.windowClick)
     $(document).on('keyup', this.keyPress)
-  }
-
-  resetEventHandlers = () => {
-    $('.navbar-burger').off()
-    $('#navbar-dropdown-target').off()
-    $(document).off('click', this.navbarDropdownClose)
-    $(document).off('keyup', this.keyPress)
-    this.setEventHandlers()
   }
 
   navbarBurgerClick (event) {
