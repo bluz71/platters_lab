@@ -1,1 +1,102 @@
-<h1 class="title">About</h1>
+<section class=section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <h1 class="title">About</h1>
+        <hr>
+        <div class="content">
+          <p>
+            This application, Platters, is an example web application developed using the <em><a href="http://rubyonrails.org" target="_blank" rel="noopener noreferrer" class="standout">Ruby on Rails</a></em> web framework and associated technologies. Refer to <%= link_to "details", details_path, class: "standout" %> for the complete set of technologies used.
+          </p>
+          <p>
+            The Platters application is my complete album collection converted into a database-backed web application with optional user registration, log in and commenting components.
+          </p>
+          <p>
+            Platters is primarily a server-side application with sprinkles of JavaScript (Turbolinks, jQuery, unobtrusive jQuery and CofeeScript).
+          </p>
+          <p>
+            Platters is also a back-end API that servers up <a href="https://en.wikipedia.org/wiki/JSON" target="_blank" rel="noopener noreferrer" class="standout">JSON</a> to an associated <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer" class="standout">React-based</a> front-end <a href="https://platters.surge.sh" target="_blank" rel="noopener noreferrer" class="standout">Platters App</a>. Refer to the Platters App <a href="https://platters.surge.sh/about" target="_blank" rel="noopener noreferrer" class="standout">about</a> page for information about that application.
+          </p>
+        </div>
+
+        <h2 class="title is-4">Developer</h2>
+        <div class="content">
+          <p>
+            My background is in IT (information technology), but in the areas of C++ systems programming as well as traditional system administration and systems management. After many years of doing that I wanted to move into something new, full-stack web development was the chosen <em>something new</em>.  Note, coming to grips with full-stack web development has involved much time, learning and experimentation.
+          </p>
+        </div>
+
+        <% if signed_in? %>
+          <h2 class="title is-4">Contact</h2>
+          <div class="content">
+            <p>If you have any comments, or feedback, then please <a href="mailto:<%= @contact_email %>?subject=Platters" class="standout">email me.</a></p>
+          </div>
+        <% end %>
+
+        <h2 class="title is-4">Sources</h2>
+        <div class="content">
+          <ul>
+            <li><p>Github repository: <a href="https://github.com/bluz71/platters" target="_blank" rel="noopener noreferrer" class="standout">Platters</a></p></li>
+            <li><p>Github account: <a href="https://github.com/bluz71" target="_blank" rel="noopener noreferrer" class="standout">bluz71</a></p></li>
+          </ul>
+        </div>
+
+        <h2 class="title is-4">Learning material</h2>
+        <div class="content">
+          <p>
+            This application was developed, over an extended period, to put in practise self-taught web development and deployment knowledge gained from the following disparate sources:
+          </p>
+        </div>
+
+        <h3 class="title is-5">Books</h3>
+        <div class="content">
+          <ul>
+            <li><a href="http://www.learningwebdesign.com" target="_blank" rel="noopener noreferrer">Learning Web Design</a></li>
+            <li><a href="https://www.manning.com/books/the-well-grounded-rubyist" target="_blank" rel="noopener noreferrer">The Well-Grounded Rubyist</a></li>
+            <li><a href="https://pragprog.com/book/ppmetr2/metaprogramming-ruby-2" target="_blank" rel="noopener noreferrer">Metaprogramming Ruby 2</a></li>
+            <li><a href="https://3rd-edition.railstutorial.org" target="_blank" rel="noopener noreferrer">Ruby on Rails Tutorial</a></li>
+            <li><a href="https://www.manning.com/books/rails-4-in-action" target="_blank" rel="noopener noreferrer">Rails 4 in Action</a></li>
+            <li><a href="https://pragprog.com/book/nrtest2/rails-4-test-prescriptions" target="_blank" rel="noopener noreferrer">Rails 4 Test Prescriptions</a></li>
+            <li><a href="https://www.manning.com/books/jquery-in-action" target="_blank" rel="noopener noreferrer">jQuery in Action</a></li>
+            <li><a href="https://www.manning.com/books/coffeescript-in-action" target="_blank" rel="noopener noreferrer">CoffeeScript in Action</a></li>
+            <li><a href="https://www.justinweiss.com/practicing-rails" target="_blank" rel="noopener noreferrer">Practicing Rails</a></li>
+            <li><a href="https://www.amazon.com/Step-Bootstrap-Quick-Responsive-Development/dp/1499655622" target="_blank" rel="noopener noreferrer">Step By Step Bootstrap 3</a></li>
+            <li><a href="http://shop.oreilly.com/product/0636920025061.do" target="_blank" rel="noopener noreferrer">PostgreSQL: Up and Running</a></li>
+            <li><a href="https://pragprog.com/book/adrpo/ruby-performance-optimization" target="_blank" rel="noopener noreferrer">Ruby Performance Optimization</a></li>
+          </ul>
+        </div>
+
+        <h3 class="title is-5">Online</h3>
+        <div class="content">
+          <ul>
+            <li><a href="http://rubykoans.com" target="_blank" rel="noopener noreferrer">Ruby Koans</a></li>
+            <li><a href="https://www.codecademy.com" target="_blank" rel="noopener noreferrer">Codecademy</a></li>
+            <li><a href="http://tutorials.jumpstartlab.com" target="_blank" rel="noopener noreferrer">Jumpstart Lab Tutorials</a></li>
+            <li><a href="http://guides.rubyonrails.org" target="_blank" rel="noopener noreferrer">Rails Guides</a></li>
+            <li><a href="http://railscasts.com" target="_blank" rel="noopener noreferrer">RailsCasts</a></li>
+            <li><a href="https://gorails.com" target="_blank" rel="noopener noreferrer">GoRails</a></li>
+            <li><a href="https://www.driftingruby.com" target="_blank" rel="noopener noreferrer">Drifting Ruby</a></li>
+            <li><a href="https://www.digitalocean.com/community/tutorials" target="_blank" rel="noopener noreferrer">DigitalOcean Tutorials</a></li>
+            <li><a href="https://devcenter.heroku.com" target="_blank" rel="noopener noreferrer">Heroku Dev Center</a></li>
+            <li><a href="http://designforhackers.com" target="_blank" rel="noopener noreferrer">Design for Hackers</a></li>
+          </ul>
+        </div>
+
+        <h2 class="title is-4">Why Rails?</h2>
+        <div class="content">
+          <p>
+            <em>Ruby on Rails</em> was chosen early on, from a host of possible
+            web development choices, due to the following appealing factors:
+          </p>
+          <ul>
+            <li><p>Developer happiness and enjoyment</p></li>
+            <li><p>Unix based tooling, development and hosting</p></li>
+            <li><p>Active communities, both locally and abroad</p></li>
+            <li><p>Future employment possibilities</p></li>
+            <li><p>Gateway to interesting new technologies</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
