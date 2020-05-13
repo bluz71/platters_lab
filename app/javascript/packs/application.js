@@ -20,4 +20,10 @@ $(() => {
 
 // Event handlers to run once the DOM is ready and also on every page change.
 $(document).on('turbolinks:load', () => {
+  // Auto-hide, then remove, flash[:notice] messages.
+  $('.alert-notice')
+    .delay(4500)
+    .fadeOut(500, () => {
+      $(this).remove()
+    })
 })
