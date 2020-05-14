@@ -17,6 +17,6 @@ class SamplePagesController < ApplicationController
   end
 
   def details
-    flash.now[:alert] = "Details alert message"
+    # flash.now[:alert] = "Details alert message"
   end
 end
