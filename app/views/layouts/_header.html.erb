@@ -4,14 +4,14 @@
       <%= image_pack_tag "platters-white.svg", height: "28", width: "36" %> platters
     <% end %>
 
-    <a role="button" class="navbar-burger burger" data-target="collapse">
+    <a role="button" class="navbar-burger burger" data-target="collapse" data-behavior="navbar-burger-target">
       <span></span>
       <span></span>
       <span></span>
     </a>
   </div>
 
-  <div id="collapse" class="navbar-menu">
+  <div id="collapse" class="navbar-menu" data-behavior="navbar-menu-target">
     <div class="navbar-start">
       <a class="navbar-item has-text-weight-semibold">
         Arists
@@ -23,7 +23,7 @@
     </div>
     <div class="navbar-end">
     <% if signed_in? %>
-      <div class="navbar-item has-dropdown navbar-dropdown-target">
+      <div class="navbar-item has-dropdown" data-behavior="navbar-dropdown-target">
         <a class="navbar-link">
           <div class="has-text-weight-semibold">
             <span class="icon">

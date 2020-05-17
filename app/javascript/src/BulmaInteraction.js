@@ -4,13 +4,13 @@ class BulmaInteraction {
   }
 
   setEventHandlers () {
-    $(document).on('click', '.navbar-burger', this.navbarBurgerClick)
-    $(document).on('click', '.navbar-dropdown-target', this.navbarDropdownClick)
+    $(document).on('click', '[data-behavior~=navbar-burger-target]', this.navbarBurgerClick)
+    $(document).on('click', '[data-behavior~=navbar-dropdown-target]', this.navbarDropdownClick)
     $(document).on('click', this.windowClick)
     $(document).on('keyup', this.keyPress)
     $(document).on(
       'click',
-      '.notification-delete-target',
+      '[data-behavior~=notification-delete-target]',
       this.notificationDeleteClick
     )
   }
@@ -27,15 +27,15 @@ class BulmaInteraction {
   }
 
   windowClick (event) {
-    $('.navbar-dropdown-target').removeClass('is-active')
+    $('[data-behavior~=navbar-dropdown-target]').removeClass('is-active')
   }
 
   keyPress = event => {
     // Close menus when the escape key is pressed.
     if (event.which === 27) {
-      $('.navbar-dropdown-target').removeClass('is-active')
-      $('.navbar-burger').removeClass('is-active')
-      $('.navbar-menu').removeClass('is-active')
+      $('[data-behavior~=navbar-dropdown-target]').removeClass('is-active')
+      $('[data-behavior~=navbar-burger-target]').removeClass('is-active')
+      $('[data-behavior~=navbar-menu-target]').removeClass('is-active')
     }
   }
 
