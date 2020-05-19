@@ -7,8 +7,9 @@
       (1,266 Albums)
     </h2>
     <hr>
-    <div class="columns">
-      <div class="column is-half album">
+    <div class="columns is-desktop is-multiline">
+
+      <div class="column is-half-desktop album">
         <div class="box has-background-white-bis">
           <div class="media">
             <div class="media-left">
@@ -17,12 +18,21 @@
               </figure>
             </div>
             <div class="media-content">
-              <div class="is-size-3 has-text-centered">
-                01011001
-              </div>
-              <div class="is-size-5 has-text-centered">
-                by Ayreon
-                <span class="is-size-6 has-text-grey">(15 tracks)</span>
+              <div class="has-text-centered">
+                <div class="is-size-3 is-text-overflow">
+                  01011001
+                </div>
+                <div class="is-size-5 is-text-overflow">
+                  by Ayreon
+                  <span class="is-size-6 has-text-grey">(15 tracks)</span>
+                </div>
+                <div class="icons">
+                  <div class="is-size-7">
+                    <%= fa_icon "calendar", text: "2008" %>
+                    <%= fa_icon "tag", text: "Progressive Metal" %>
+                    <%= fa_icon "comment-o", text: "6" %>
+                  </div>
+                </div>
               </div>
               <div class="content">
                 <ul>
@@ -39,7 +49,8 @@
           </div>
         </div>
       </div>
-      <div class="column is-half album">
+
+      <div class="column is-half-desktop album">
         <div class="box has-background-white-bis">
           <div class="media">
             <div class="media-left">
@@ -50,12 +61,21 @@
               </div>
             </div>
             <div class="media-content">
-              <div class="is-size-3 has-text-centered">
-                100 Essential 1980s
-              </div>
-              <div class="is-size-5 has-text-centered">
-                by Various
-                <span class="is-size-6 has-text-grey">(100 tracks)</span>
+              <div class="has-text-centered">
+                <div class="is-size-3 is-text-overflow">
+                  100 Essential 1980s
+                </div>
+                <div class="is-size-5 is-text-overflow">
+                  by Various
+                  <span class="is-size-6 has-text-grey">(100 tracks)</span>
+                </div>
+                <div class="icons">
+                  <div class="is-size-7">
+                    <%= fa_icon "calendar", text: "2008" %>
+                    <%= fa_icon "tag", text: "Pop" %>
+                    <%= fa_icon "comment-o", text: "38" %>
+                  </div>
+                </div>
               </div>
               <div class="content">
                 <ul>
@@ -72,6 +92,93 @@
           </div>
         </div>
       </div>
+
+      <div class="column is-half-desktop album">
+        <div class="box has-background-white-bis">
+          <div class="media">
+            <div class="media-left">
+              <div class="level">
+                <figure class="image is-128x128">
+                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/122/small_Beyond_Twilight--For_The_Love_Of_Art_And_The_Making.jpg">
+                </figure>
+              </div>
+            </div>
+            <div class="media-content">
+              <div class="has-text-centered">
+                <div class="is-size-3 is-text-overflow">
+                  For The Love Of Art And The Making
+                </div>
+                <div class="is-size-5 is-text-overflow">
+                  by Beyond Twilight 
+                  <span class="is-size-6 has-text-grey">(43 tracks)</span>
+                </div>
+                <div class="icons">
+                  <div class="is-size-7">
+                    <%= fa_icon "calendar", text: "2006" %>
+                    <%= fa_icon "tag", text: "Metal" %>
+                    <%= fa_icon "comment-o", text: "26" %>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <ul>
+                  <li>1. In The Eyes Of My Soul (First Movement)</li>
+                  <li>2. Creep Evil</li>
+                  <li>3. Sleeping Beauty - The Journey</li>
+                  <li>4. Purity</li>
+                  <li>5. Sleeping Beauty - Connected</li>
+                  <li>6. Tongue Angel</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half-desktop album">
+        <div class="box has-background-white-bis">
+          <div class="media">
+            <div class="media-left">
+              <div class="level">
+                <figure class="image is-128x128">
+                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/683/small_Meat_Loaf--Bat_Out_Of_Hell_II_Back_Into_Hell.jpg">
+                </figure>
+              </div>
+            </div>
+            <div class="media-content">
+              <div class="has-text-centered">
+                <div class="is-size-3 is-text-overflow">
+                  Bat Out Of Hell II: Back Into Hell
+                </div>
+                <div class="is-size-5 is-text-overflow">
+                  by Meat Loaf
+                  <span class="is-size-6 has-text-grey">(43 tracks)</span>
+                </div>
+                <div class="icons">
+                  <div class="is-size-7">
+                    <%= fa_icon "calendar", text: "1993" %>
+                    <%= fa_icon "tag", text: "Rock" %>
+                    <%= fa_icon "comment-o", text: "23" %>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <ul>
+                  <li>1. I&#39;d Do Anything For Love (But I Won&#39;t Do That)</li>
+                  <li>2. Life Is A Lemon And I Want My Money Back</li>
+                  <li>3. Rock And Roll Dreams Come Through</li>
+                  <li>4. It Just Won&#39;t Quit</li>
+                  <li>5. Out Of The Frying Pan (And Into The Fire)</li>
+                  <li>6. Objects In The Rear View Mirror May Appear Closer Than They Are</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
