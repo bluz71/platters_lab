@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get "about" => "sample_pages#about"
   get "details" => "sample_pages#details"
   get "albums" => "sample_pages#albums"
+  get "album" => "sample_pages#album"
+  get "artist" => "sample_pages#artist"
 end

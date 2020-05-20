@@ -22,4 +22,10 @@ class SamplePagesController < ApplicationController
 
   def albums
   end
+
+  def album
+  end
+
+  def artist
+  end
 end
