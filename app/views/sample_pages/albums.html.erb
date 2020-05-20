@@ -7,6 +7,31 @@
       (1,266 Albums)
     </h2>
     <hr>
+
+    <nav class="pagination is-small is-centered">
+      <ul class="pagination-list">
+        <li><a class="pagination-link is-current">All</a></li>
+        <% ("A".."Z").each do |letter| %>
+          <li><a class="pagination-link"><%= letter %></a></li>
+        <% end %>
+        <li>
+          <a class="pagination-link">
+            <%= fa_icon "random" %>
+          </a>
+        </li>
+        <li>
+          <a class="pagination-link">
+            <%= fa_icon "filter" %>
+          </a>
+        </li>
+        <li>
+          <a class="pagination-link">
+            <%= fa_icon "search" %>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <div class="columns is-desktop is-multiline">
 
       <div class="column is-half-desktop album">
@@ -1128,5 +1153,34 @@
       </div>
 
     </div>
+
+    <nav class="pagination">
+      <a class="pagination-previous">Previous</a>
+      <a class="pagination-next">Next page</a>
+      <ul class="pagination-list">
+        <li>
+          <a class="pagination-link">1</a>
+        </li>
+        <li>
+          <span class="pagination-ellipsis">&hellip;</span>
+        </li>
+        <li>
+          <a class="pagination-link">45</a>
+        </li>
+        <li>
+          <a class="pagination-link is-current">46</a>
+        </li>
+        <li>
+          <a class="pagination-link">47</a>
+        </li>
+        <li>
+          <span class="pagination-ellipsis">&hellip;</span>
+        </li>
+        <li>
+          <a class="pagination-link">86</a>
+        </li>
+      </ul>
+    </nav>
+
   </div>
 </section>

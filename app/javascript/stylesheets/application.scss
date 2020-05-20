@@ -31,6 +31,12 @@ $red-yeti:         #f04124;
   border-radius: 2px;
 }
 
+.pagination-link,
+.pagination-next,
+.pagination-previous {
+  border-radius: 3px;
+}
+
 .box {
   box-shadow: 0 0.5em 1em -0.125em $grey-mid-light, 0 0 0 1px $grey-mid-light;
 }
