@@ -1,4 +1,5 @@
 import BulmaInteraction from '../src/BulmaInteraction'
+import AlbumsSelect from '../src/AlbumsSelect'
 
 // Load stylesheets.
 import '../stylesheets/application'
@@ -15,6 +16,7 @@ require.context('../images', true, /\.(?:png|jpg|gif|ico|svg)$/)
 $(() => {
   /* eslint-disable no-new */
   new BulmaInteraction()
+  new AlbumsSelect()
   /* eslint-enable no-new */
 })
 
