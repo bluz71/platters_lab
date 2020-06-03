@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section albums">
   <div class="container">
     <h1 class="title">
       Albums
@@ -31,6 +31,98 @@
         </li>
       </ul>
     </nav>
+
+    <div class="columns filter">
+      <div class="column has-text-centered is-one-fifth">
+        <div class="field">
+          <label class="label is-small has-text-grey">Genre</label>
+          <div class="select">
+            <select>
+              <option>Choose</option>
+              <option value="AOR">AOR</option>
+              <option value="Acid Jazz">Acid Jazz</option>
+              <option value="Alternative">Alternative</option>
+              <option value="Alternative Metal">Alternative Metal</option>
+              <option value="Art Rock">Art Rock</option>
+              <option value="Blues">Blues</option>
+              <option value="Classic Rock">Classic Rock</option>
+              <option value="Classical">Classical</option>
+              <option value="Country">Country</option>
+              <option value="Disco">Disco</option>
+              <option value="Downtempo">Downtempo</option>
+              <option value="Easy Listening">Easy Listening</option>
+              <option value="Electronic">Electronic</option>
+              <option value="Folk">Folk</option>
+              <option value="Freestyle">Freestyle</option>
+              <option value="Funk">Funk</option>
+              <option value="Glam Metal">Glam Metal</option>
+              <option value="Grunge">Grunge</option>
+              <option value="Hard Rock">Hard Rock</option>
+              <option value="House">House</option>
+              <option value="Metal">Metal</option>
+              <option value="Pop">Pop</option>
+              <option value="Power Metal">Power Metal</option>
+              <option value="Progressive Metal">Progressive Metal</option>
+              <option value="Progressive Rock">Progressive Rock</option>
+              <option value="R&amp;B">R&amp;B</option>
+              <option value="Rock">Rock</option>
+              <option value="Rock &amp; Roll">Rock &amp; Roll</option>
+              <option value="Soul">Soul</option>
+              <option value="Soundtrack">Soundtrack</option>
+              <option value="Southern Rock">Southern Rock</option>
+              <option value="Stoner Rock">Stoner Rock</option>
+              <option value="Symphonic Metal">Symphonic Metal</option>
+              <option value="Symphonic Rock">Symphonic Rock</option></select>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="column has-text-centered is-one-fifth">
+        <div class="field">
+          <label class="label is-small has-text-grey">Year(s)</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+      </div>
+      <div class="column has-text-centered is-one-fifth">
+        <div class="field">
+          <label class="label is-small has-text-grey">Sort</label>
+          <div class="control has-text-centered">
+            <label class="radio">
+              <input type="radio" name="answer">
+              Title
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer">
+              Year
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="column has-text-centered is-one-fifth">
+        <div class="field">
+          <label class="label is-small has-text-grey">Order</label>
+          <div class="control has-text-centered">
+            <label class="radio">
+              <input type="radio" name="answer">
+              Ascend 
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer">
+              Descend
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="column is-one-fifth is-centered">
+        <div class="field">
+          <div class="control has-text-centered">
+            <button class="button is-link">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="columns" data-behavior="album-search-form-target" style="display: none;">
       <div class="column is-8 is-offset-2">
