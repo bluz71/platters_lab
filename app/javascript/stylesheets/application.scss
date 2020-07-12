@@ -17,17 +17,11 @@ $fa-font-path: "~font-awesome/fonts/";
 @import url("https://fonts.googleapis.com/css?family=Capriola");
 
 // Colors.
-// $grey-mid-dark:    #777;
-// $grey-light:       #f8f8f8;
-// $black-text:       #111;
-// $green-shade:      #9bd8b2;
-
-$grey-dark:        #515151;
+$grey-dark:        #333;
 $grey-mid-dark:    #ccc;
 $grey-mid-light:   #eee;
-$black-text:       #333;
-$blue-yeti:        #3273dc;
-$red-yeti:         #f04124;
+$blue:             #3273dc;
+$red:              #f04124;
 
 // Yeti customizations.
 .box {
@@ -53,19 +47,17 @@ body {
 }
 
 .footer {
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
+  border-top: 1px solid $grey-mid-light;
 
+  ul {
     li {
       display: inline;
-      margin-right: 1em;
 
       a {
         color: $grey-dark;
 
         &:hover {
-          color: $black-text;
+          color: $blue;
         }
       }
     }
@@ -105,10 +97,10 @@ body {
 
   .album {
     a {
-      color: $black-text;
+      color: $grey-dark;
 
       &:hover {
-        color: $blue-yeti;
+        color: $blue;
       }
     }
 
@@ -118,7 +110,7 @@ body {
         border: 1px solid $grey-mid-dark;
 
         &:hover {
-          border: 1px solid $blue-yeti;
+          border: 1px solid $blue;
         }
       }
     }
