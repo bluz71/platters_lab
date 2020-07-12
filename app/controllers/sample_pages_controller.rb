@@ -28,4 +28,7 @@ class SamplePagesController < ApplicationController
 
   def artist
   end
+
+  def comments
+  end
 end
