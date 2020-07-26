@@ -31,4 +31,7 @@ class SamplePagesController < ApplicationController
 
   def comments
   end
+
+  def sign_up
+  end
 end
