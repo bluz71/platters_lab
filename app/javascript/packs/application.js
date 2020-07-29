@@ -1,5 +1,6 @@
 import BulmaInteraction from '../src/BulmaInteraction'
 import AlbumsSelect from '../src/AlbumsSelect'
+import UserForm from '../src/UserForm'
 
 // Load stylesheets.
 import '../stylesheets/application'
@@ -17,6 +18,7 @@ $(() => {
   /* eslint-disable no-new */
   new BulmaInteraction()
   new AlbumsSelect()
+  new UserForm()
   /* eslint-enable no-new */
 })
 
