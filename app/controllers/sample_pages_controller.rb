@@ -17,7 +17,6 @@ class SamplePagesController < ApplicationController
   end
 
   def details
-    # flash.now[:alert] = "Details alert message"
   end
 
   def albums
@@ -33,5 +32,6 @@ class SamplePagesController < ApplicationController
   end
 
   def sign_up
+    # flash.now[:alert] = "Account could not be created"
   end
 end
