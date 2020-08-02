@@ -4,8 +4,16 @@ class BulmaInteraction {
   }
 
   setEventHandlers () {
-    $(document).on('click', '[data-behavior~=navbar-burger-target]', this.navbarBurgerClick)
-    $(document).on('click', '[data-behavior~=navbar-dropdown-target]', this.navbarDropdownClick)
+    $(document).on(
+      'click',
+      '[data-behavior~=navbar-burger-target]',
+      this.navbarBurgerClick
+    )
+    $(document).on(
+      'click',
+      '[data-behavior~=navbar-dropdown-target]',
+      this.navbarDropdownClick
+    )
     $(document).on('click', this.windowClick)
     $(document).on('keyup', this.keyPress)
     $(document).on(
@@ -40,7 +48,9 @@ class BulmaInteraction {
   }
 
   notificationDeleteClick (event) {
-    $(event.currentTarget).parent().remove()
+    $(event.currentTarget)
+      .parent()
+      .remove()
   }
 }
 
