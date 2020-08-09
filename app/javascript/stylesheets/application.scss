@@ -84,6 +84,10 @@ body {
   text-overflow: ellipsis;
 }
 
+.is-fullwidth {
+  padding: 0px !important;
+}
+
 .details {
   p {
     @extend .mt-2;
