@@ -95,6 +95,27 @@ body {
   }
 }
 
+.album-of-the-day {
+  a {
+    color: $color-grey-dark;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  img {
+    height: 400px;
+    width: 400px;
+    border-radius: 4px;
+    border: 1px solid $color-grey-mid;
+
+    &:hover {
+      border: 1px solid $color-blue;
+    }
+  }
+}
+
 .albums {
   .filter {
     // Center the select button within the column.

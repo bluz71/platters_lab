@@ -13,6 +13,30 @@
   </section>
 </section>
 
+<section class="section album-of-the-day">
+  <div class="container">
+    <h1 class="title is-size-4">
+      Album of the day -
+      <%= link_to "The Gathering", album_path %>
+    </h1>
+    <h2 class="subtitle">
+      by
+      <%= link_to "Jorn", artist_path %>
+    </h2>
+    <hr>
+
+    <div class="box has-background-white-bis">
+      <div class="has-text-centered">
+        <figure class="image is-inline-block mt-4 mb-4">
+          <%= link_to album_path do %>
+            <%= image_tag "https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/533/Jorn--The_Gathering.jpg"%>
+          <% end %>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section albums">
   <div class="container">
     <h1 class="title is-size-4">
