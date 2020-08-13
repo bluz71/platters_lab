@@ -8,6 +8,37 @@
         <h1 class="title has-text-weight-medium has-text-centered">
           Prime technologies used by the Platters application.
         </h1>
+        <div class="columns mt-5">
+          <div class="column has-text-centered">
+            <div class="is-size-1">
+              <%= fa_icon "diamond" %>
+            </div>
+            <div class="is-size-4">
+              Ruby on Rails server-side web application framework
+            </div>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="is-size-1">
+              <%= fa_icon "database" %>
+            </div>
+            <div class="is-size-4">
+              PostgreSQL and Redis database systems
+            </div>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="is-size-1">
+              <%= fa_icon "tablet" %>
+            </div>
+            <div class="is-size-4">
+              Bootstrap responsive front-end web framework
+            </div>
+          </div>
+        </div>
+        <div class="has-text-centered mt-5">
+          <%= link_to "Complete details", details_path, class: "button is-link" %>
+        </div>
       </div>
     </div>
   </section>
@@ -17,11 +48,11 @@
   <div class="container">
     <h1 class="title is-size-4">
       Album of the day -
-      <%= link_to "The Gathering", album_path %>
+      <%= link_to "Born To Run", album_path %>
     </h1>
     <h2 class="subtitle">
       by
-      <%= link_to "Jorn", artist_path %>
+      <%= link_to "Bruce Springsteen", artist_path %>
     </h2>
     <hr>
 
@@ -29,7 +60,7 @@
       <div class="has-text-centered">
         <figure class="image is-inline-block mt-4 mb-4">
           <%= link_to album_path do %>
-            <%= image_tag "https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/533/Jorn--The_Gathering.jpg"%>
+            <%= image_tag "https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/180/Bruce_Springsteen--Born_To_Run.jpg"%>
           <% end %>
         </figure>
       </div>
