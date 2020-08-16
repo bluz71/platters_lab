@@ -4,7 +4,7 @@
       <div class="column">
         <section class="hero">
           <div class="hero-body">
-            <div class="container">
+            <div class="container has-text-centered">
               <h1 class="platters-title">
                 Platters
               </h1>
@@ -74,17 +74,21 @@
 <section class="section album-of-the-day">
   <div class="container">
     <h1 class="title is-size-4">
-      Album of the day -
-      <%= link_to "Born To Run", album_path %>
+      Album of the day
     </h1>
-    <h2 class="subtitle">
-      by
-      <%= link_to "Bruce Springsteen", artist_path %>
-    </h2>
     <hr>
 
     <div class="box has-background-white-bis">
-      <div class="has-text-centered">
+      <div class="has-text-centered has-text-weight-light">
+        <div>
+          <span class="is-size-2">
+            <%= link_to "Born To Run", album_path %>
+          </span>
+          <span class="is-size-3">by </span>
+          <span class="is-size-3">
+            <%= link_to "Bruce Springsteen", artist_path %>
+          </span>
+        </div>
         <figure class="image is-inline-block mt-4 mb-4">
           <%= link_to album_path do %>
             <%= image_tag "https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/180/Bruce_Springsteen--Born_To_Run.jpg"%>
