@@ -95,6 +95,22 @@ body {
   }
 }
 
+.splash {
+  .platters-title {
+    font-size: 4.5rem;
+  }
+
+  .platters-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .platters-logo {
+    img {
+      height: 23rem;
+    }
+  }
+}
+
 .album-of-the-day {
   a {
     color: $color-grey-dark;
