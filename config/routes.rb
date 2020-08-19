@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "log_out" => "sample_pages#log_out"
   get "about" => "sample_pages#about"
   get "details" => "sample_pages#details"
+  get "artists" => "sample_pages#artists"
   get "albums" => "sample_pages#albums"
   get "album" => "sample_pages#album"
   get "artist" => "sample_pages#artist"

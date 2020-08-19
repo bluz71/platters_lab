@@ -19,6 +19,9 @@ class SamplePagesController < ApplicationController
   def details
   end
 
+  def artists
+  end
+
   def albums
   end
 
