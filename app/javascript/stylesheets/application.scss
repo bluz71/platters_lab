@@ -148,6 +148,25 @@ body {
   }
 }
 
+.artists-sidebar {
+  a {
+    color: $color-grey-dark;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  img {
+    border: 1px solid $color-grey-mid;
+    border-radius: 4px;
+
+    &:hover {
+      border: 1px solid $color-blue;
+    }
+  }
+}
+
 .albums {
   .filter {
     // Center the select button within the column.
