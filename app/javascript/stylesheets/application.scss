@@ -79,7 +79,7 @@ body {
   width: 75vw;
 }
 
-.has-text-overflow {
+.is-overflow {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -149,13 +149,10 @@ body {
 }
 
 .artists-sidebar {
-  img {
-    border: 1px solid $color-grey-mid;
-    border-radius: 4px;
-
-    &:hover {
-      border: 1px solid $color-blue;
-    }
+  .comment {
+    // Needed for text overflow to work on a flexbox element.
+    // See: https://css-tricks.com/flexbox-truncated-text
+    min-width: 0;
   }
 
   .panel-block {
@@ -209,7 +206,7 @@ body {
         font-size: 0.85rem;
 
         li {
-          @extend .has-text-overflow;
+          @extend .is-overflow;
         }
       }
     }
