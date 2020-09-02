@@ -1,8 +1,50 @@
-<section class="section artists">
+<section id="artists" class="section">
   <div class="container">
-    <h1 class="title">Artists</h1>
-    <h2 class="subtitle">(582 Artists)</h2>
+    <div class="is-pulled-left">
+      <h1 class="title">Artists</h1>
+      <h2 class="subtitle">(582 Artists)</h2>
+    </div>
+    <% if signed_in? %>
+      <div class="is-pulled-right">
+      <%= link_to artist_path, class: "button is-link" do %>
+        <%= fa_icon "plus"%>&nbsp;Artist
+      <% end %>
+      </div>
+    <% end %>
+    <div class="is-clearfix"></div>
     <hr>
+
+    <nav class="pagination is-small is-centered">
+      <ul class="pagination-list">
+        <li><a class="pagination-link is-current">All</a></li>
+        <% ("A".."Z").each do |letter| %>
+          <li><a class="pagination-link"><%= letter %></a></li>
+        <% end %>
+        <li>
+          <a class="pagination-link has-tooltip-arrow" data-behavior="artist-search-link-target" data-tooltip="Search">
+            <%= fa_icon "search" %>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="columns" data-behavior="artist-search-form-target" style="display: none;">
+      <div class="column is-8 is-offset-2">
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input class="input" type="text" placeholder="Search albums..." data-behavior="artist-search-field-target">
+          </div>
+          <div class="control">
+            <a class="button is-white">
+              <span class="icon">
+                <%= fa_icon("search") %>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="columns">
       <div class="column is-four-fifths-desktop">
 
@@ -379,9 +421,39 @@
               <%= fa_icon "comment-o", text: "48", class: "ml-2" %>
             </div>
           <% end %>
+
         </div>
 
+        <nav class="pagination is-small">
+          <a class="pagination-previous">Previous</a>
+          <a class="pagination-next">Next page</a>
+          <ul class="pagination-list">
+            <li>
+              <a class="pagination-link">1</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a class="pagination-link">45</a>
+            </li>
+            <li>
+              <a class="pagination-link is-current">46</a>
+            </li>
+            <li>
+              <a class="pagination-link">47</a>
+            </li>
+            <li>
+              <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+            <li>
+              <a class="pagination-link">86</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
+
       <div id="artists-sidebar" class="column is-one-fifth-desktop is-hidden-touch">
         <div class="panel">
           <p class="panel-heading">
@@ -652,5 +724,7 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </section>

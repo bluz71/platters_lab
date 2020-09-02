@@ -1,4 +1,5 @@
 import BulmaInteraction from '../src/BulmaInteraction'
+import ArtistsSelect from '../src/ArtistsSelect'
 import AlbumsSelect from '../src/AlbumsSelect'
 import UserForm from '../src/UserForm'
 
@@ -17,6 +18,7 @@ require.context('../images', true, /\.(?:png|jpg|gif|ico|svg)$/)
 $(() => {
   /* eslint-disable no-new */
   new BulmaInteraction()
+  new ArtistsSelect()
   new AlbumsSelect()
   new UserForm()
   /* eslint-enable no-new */

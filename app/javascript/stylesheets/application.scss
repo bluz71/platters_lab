@@ -136,11 +136,8 @@ body {
   }
 }
 
-.artists {
+#artists {
   .artist {
-    @extend .px-4;
-    @extend .py-4;
-
     a {
       color: $color-grey-dark;
     }
