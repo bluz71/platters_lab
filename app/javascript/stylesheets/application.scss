@@ -79,7 +79,10 @@ body {
   width: 75vw;
 }
 
-.is-overflow {
+// The parent element may need to have 'min-width: 0;' set for overflow to
+// function correctly on flexbox elements.
+// See: https://css-tricks.com/flexbox-truncated-text
+.is-overflowed {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -148,15 +151,22 @@ body {
   }
 }
 
-.artists-sidebar {
-  .comment {
-    // Needed for text overflow to work on a flexbox element.
-    // See: https://css-tricks.com/flexbox-truncated-text
-    min-width: 0;
-  }
-
+#artists-sidebar {
   .panel-block {
     justify-content: center;
+
+    .album {
+      min-width: 0;
+
+      img {
+        border-radius: 3px;
+        border: 1px solid $color-grey-mid;
+      }
+    }
+
+    .comment {
+      min-width: 0;
+    }
   }
 }
 
@@ -189,8 +199,6 @@ body {
     }
 
     .media-content {
-      // Needed for text overflow to work on a flexbox element.
-      // See: https://css-tricks.com/flexbox-truncated-text
       min-width: 0;
 
       .icons {
@@ -206,7 +214,7 @@ body {
         font-size: 0.85rem;
 
         li {
-          @extend .is-overflow;
+          @extend .is-overflowed;
         }
       }
     }

@@ -382,113 +382,96 @@
         </div>
 
       </div>
-      <div class="column is-one-fifth-desktop is-hidden-touch artists-sidebar">
+      <div id="artists-sidebar" class="column is-one-fifth-desktop is-hidden-touch">
         <div class="panel">
           <p class="panel-heading">
             New Albums
           </p>
 
-          <div class="panel-block">
-            <div class="has-text-centered is-clipped mt-2">
+          <%= link_to album_path, class: "panel-block" do %>
+            <div class="album has-text-centered has-text-weight-light is-size-6 mt-2">
               <figure class="image is-inline-block is-96x96">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1271/small_Psychotic_Waltz--The_GodShaped_Void.jpg">
-                <% end %>
+                <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1271/small_Psychotic_Waltz--The_GodShaped_Void.jpg">
               </figure>
-              <div class="is-size-6 is-overflow">
-                <%= link_to "The God-Shaped Void", album_path %>
+              <div class="is-overflowed">
+                The God-Shaped Void
               </div>
-              <div class="is-size-6 is-overflow mt-1">
-                <span class="has-text-weight-light">by</span>
-                <%= link_to "Psychotic Waltz", artist_path %>
+              <div class="is-overflowed mt-1">
+                by Psychotic Waltz
               </div>
             </div>
-          </div>
+          <% end %>
 
-          <div class="panel-block">
-            <div class="has-text-centered is-clipped mt-2">
+          <%= link_to album_path, class: "panel-block" do %>
+            <div class="album has-text-centered has-text-weight-light is-size-6 mt-2">
               <figure class="image is-inline-block is-96x96">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1270/small_Falconer--From_A_Dying_Ember.jpg">
-                <% end %>
+                <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1270/small_Falconer--From_A_Dying_Ember.jpg">
               </figure>
-              <div class="is-size-6 is-overflow">
-                <%= link_to "From A Dying Ember", album_path %>
+              <div class="is-overflowed">
+                From A Dying Ember
               </div>
-              <div class="is-size-6 is-overflow mt-1">
-                <span class="has-text-weight-light">by</span>
-                <%= link_to "Falconer", artist_path %>
+              <div class="is-overflowed mt-1">
+                by Falconer
               </div>
             </div>
-          </div>
+          <% end %>
 
-          <div class="panel-block">
-            <div class="has-text-centered is-clipped mt-2">
+          <%= link_to album_path, class: "panel-block" do %>
+            <div class="album has-text-centered has-text-weight-light is-size-6 mt-2">
               <figure class="image is-inline-block is-96x96">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1268/small_Green_Carnation--Leaves_Of_Yesteryear.jpg">
-                <% end %>
+                <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1268/small_Green_Carnation--Leaves_Of_Yesteryear.jpg">
               </figure>
-              <div class="is-size-6 is-overflow">
-                <%= link_to "Leaves Of Yesteryear", album_path %>
+              <div class="is-overflowed">
+                Leaves Of Yesteryear
               </div>
-              <div class="is-size-6 is-overflow mt-1">
-                <span class="has-text-weight-light">by</span>
-                <%= link_to "Green Carnation", artist_path %>
+              <div class="is-overflowed mt-1">
+                by Green Carnation
               </div>
             </div>
-          </div>
+          <% end %>
 
-          <div class="panel-block">
-            <div class="has-text-centered is-clipped mt-2">
+          <%= link_to album_path, class: "panel-block" do %>
+            <div class="album has-text-centered has-text-weight-light is-size-6 mt-2">
               <figure class="image is-inline-block is-96x96">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1265/small_Ashley_McBryde--Never_Will.jpg">
-                <% end %>
+                <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1265/small_Ashley_McBryde--Never_Will.jpg">
               </figure>
-              <div class="is-size-6 is-overflow">
-                <%= link_to "Never Will", album_path %>
+              <div class="is-overflowed">
+                Never Will
               </div>
-              <div class="is-size-6 is-overflow mt-1">
-                <span class="has-text-weight-light">by</span>
-                <%= link_to "Ashley McBryde", artist_path %>
+              <div class="is-overflowed mt-1">
+                By Ashley McBryde
               </div>
             </div>
-          </div>
+          <% end %>
 
-          <div class="panel-block">
-            <div class="has-text-centered is-clipped mt-2">
+          <%= link_to album_path, class: "panel-block" do %>
+            <div class="album has-text-centered has-text-weight-light is-size-6 mt-2">
               <figure class="image is-inline-block is-96x96">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1263/small_Nightwish--Human_II_Nature.jpg">
-                <% end %>
+                <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1263/small_Nightwish--Human_II_Nature.jpg">
               </figure>
-              <div class="is-size-6 is-overflow">
-                <%= link_to "Human II Nature", album_path %>
+              <div class="is-overflowed">
+                Human II Nature
               </div>
-              <div class="is-size-6 is-overflow mt-1">
-                <span class="has-text-weight-light">by</span>
-                <%= link_to "Nightwish", artist_path %>
+              <div class="is-overflowed mt-1">
+                by Nightwish
               </div>
             </div>
-          </div>
+          <% end %>
 
-          <div class="panel-block">
-            <div class="has-text-centered is-clipped mt-2">
+          <%= link_to album_path, class: "panel-block" do %>
+            <div class="album has-text-centered has-text-weight-light is-size-6 mt-2">
               <figure class="image is-inline-block is-96x96">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1254/small_Heat--Heat_II.jpg">
-                <% end %>
+                <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1254/small_Heat--Heat_II.jpg">
               </figure>
-              <div class="is-size-6 is-overflow">
-                <%= link_to "H.e.a.t II", album_path %>
+              <div class="is-overflowed">
+                H.e.a.t II
               </div>
-              <div class="is-size-6 is-overflow mt-1">
-                <span class="has-text-weight-light">by</span>
-                <%= link_to "H.e.a.t", artist_path %>
+              <div class="is-overflowed mt-1">
+                by H.e.a.t
               </div>
             </div>
-          </div>
+          <% end %>
+
         </div>
 
         <div class="panel">
@@ -504,10 +487,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/88884e5cb90c02031f031bc4760fcf69?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 bluz71
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Liquid Monster
               </div>
             </div>
@@ -521,10 +504,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/a3fac396421b05f2e3777d0427a1b100?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 hayley
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Making Movies
               </div>
             </div>
@@ -538,10 +521,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 nella_schmeler
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Abbey Road
               </div>
             </div>
@@ -555,10 +538,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 well39
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Let's Dance
               </div>
             </div>
@@ -572,10 +555,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/ebfb6ad212e8a4aa457fdbaabf1f28b2?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 liza10
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Voulez-Vous
               </div>
             </div>
@@ -589,10 +572,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 ewell39
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Dreamboat Annie
               </div>
             </div>
@@ -606,10 +589,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 nella_schmeler94
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Bat Out Of Hell II: Back Into Hell
               </div>
             </div>
@@ -623,10 +606,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/ed19bc66be299f0f0c5fdb38bc0978be?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 exi_terry39
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Miracles
               </div>
             </div>
@@ -640,10 +623,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/702376ea382866afea31a0931ca3e21f?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 filomena_cummings674
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in The Raging Fire
               </div>
             </div>
@@ -657,10 +640,10 @@
               <figure class="image is-inline-block is-64x64">
                 <img class="is-rounded" src="https://gravatar.com/avatar/d257988953d6417461b37bda574eee2a?s=80&r=pg&d=identicon">
               </figure>
-              <div class="is-overflow">
+              <div class="is-overflowed">
                 raymundo39
               </div>
-              <div class="is-overflow mt-1">
+              <div class="is-overflowed mt-1">
                 in Making Movies
               </div>
             </div>
