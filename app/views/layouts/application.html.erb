@@ -12,7 +12,7 @@
 
   <body class="has-navbar-fixed-top">
     <%= render "layouts/header" %>
-    <div class="flash-messages">
+    <div id="flash-messages">
       <% flash.each do |key, message| %>
         <div class="notification is-<%= key == "alert" ? "danger" : "link" %>" data-behavior="alert-<%= key %>-target">
           <button class="delete" data-behavior="notification-delete-target"></button>

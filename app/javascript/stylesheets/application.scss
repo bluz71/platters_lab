@@ -14,12 +14,9 @@ $notification-radius: 3px;
 $fa-font-path: "~font-awesome/fonts/";
 @import "~font-awesome/scss/font-awesome";
 @import "@creativebulma/bulma-tooltip";
-
-// --------------------------------------------------------------------------
-
 @import url("https://fonts.googleapis.com/css?family=Capriola");
 
-// Colors.
+// Yeti colors.
 $color-grey-dark:    #222;
 $color-grey-mid:     #ccc;
 $color-grey-light:   #eee;
@@ -28,8 +25,33 @@ $color-blue:         #3273dc;
 $color-red:          #f04124;
 
 // Yeti customizations.
+
 .box {
   box-shadow: 0 0.5em 1em -0.125em $color-grey-light, 0 0 0 1px $color-grey-light;
+}
+
+.notification {
+  width: 75vw;
+}
+
+.navbar-brand a {
+  font-family: "Capriola";
+  font-size: 1.15em;
+}
+
+// Custom helpers.
+
+// The parent element may need to have 'min-width: 0;' set for overflow to
+// function correctly on flexbox elements.
+// See: https://css-tricks.com/flexbox-truncated-text
+.is-overflowed {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.is-fullwidth {
+  padding: 0px !important;
 }
 
 // Sticky footer.
@@ -41,16 +63,13 @@ body {
   flex-direction: column;
 }
 
+// Custom styling per identifier.
+
 #main {
   flex: 1;
 }
 
-.navbar-brand a {
-  font-family: "Capriola";
-  font-size: 1.15em;
-}
-
-.footer {
+#layout-footer {
   border-top: 1px solid $color-grey-light;
 
   ul {
@@ -68,38 +87,21 @@ body {
   }
 }
 
-.flash-messages {
+#flash-messages {
   position: fixed;
   z-index: 9999;
   top: 2rem;
   left: 2rem;
 }
 
-.notification {
-  width: 75vw;
-}
-
-// The parent element may need to have 'min-width: 0;' set for overflow to
-// function correctly on flexbox elements.
-// See: https://css-tricks.com/flexbox-truncated-text
-.is-overflowed {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.is-fullwidth {
-  padding: 0px !important;
-}
-
-.details {
+#details {
   p {
     @extend .mt-2;
     @extend .mb-4;
   }
 }
 
-.splash {
+#platters-splash {
   .platters-title {
     font-size: 4.5rem;
   }
@@ -115,7 +117,7 @@ body {
   }
 }
 
-.album-of-the-day {
+#album-of-the-day {
   a {
     color: $color-grey-dark;
 
@@ -167,7 +169,7 @@ body {
   }
 }
 
-.albums {
+#albums {
   .filter {
     // Center the select button within the column.
     .is-centered {
