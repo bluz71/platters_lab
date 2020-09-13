@@ -37,4 +37,7 @@ class SamplePagesController < ApplicationController
   def sign_up
     # flash.now[:alert] = "Account could not be created"
   end
+
+  def new_artist
+  end
 end
