@@ -124,22 +124,7 @@
       </div>
     </div>
 
-    <div class="columns" data-behavior="album-search-form-target" style="display: none;">
-      <div class="column is-8 is-offset-2">
-        <div class="field has-addons">
-          <div class="control is-expanded">
-            <input class="input" type="text" placeholder="Search albums..." data-behavior="album-search-field-target">
-          </div>
-          <div class="control">
-            <a class="button is-white">
-              <span class="icon">
-                <%= fa_icon("search") %>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= render partial: "shared/search", locals: {type: "album"} %>
 
     <div class="columns is-desktop is-multiline">
 
