@@ -7,12 +7,15 @@ $input-radius: 3px;
 $title-color: #333;
 $label-color: #333;
 $notification-radius: 3px;
+$divider-margin-inner-size: 0px;
+$divider-margin-size: 0.5rem 25px 25px;
 
 @import '~bulmaswatch/yeti/_variables';
 @import '~bulma';
 @import '~bulmaswatch/yeti/_overrides';
 $fa-font-path: "~font-awesome/fonts/";
 @import "~font-awesome/scss/font-awesome";
+@import "@creativebulma/bulma-divider";
 @import "@creativebulma/bulma-tooltip";
 @import url("https://fonts.googleapis.com/css?family=Capriola");
 
@@ -217,6 +220,44 @@ body {
 
         li {
           @extend .is-overflowed;
+        }
+      }
+    }
+  }
+}
+
+#artist {
+  #artist-albums {
+    .media-left {
+      img {
+        border: 1px solid $color-grey-mid;
+
+        &:hover {
+          border: 1px solid $color-blue;
+        }
+      }
+    }
+
+    .media-content {
+      min-width: 0;
+
+      .icons {
+        a {
+          color: $color-grey-dark;
+
+          &:hover {
+            color: $color-blue;
+          }
+        }
+      }
+
+      ul {
+        list-style: none;
+        @extend .ml-0;
+        @extend .is-overflowed;
+
+        li {
+          display: inline;
         }
       }
     }

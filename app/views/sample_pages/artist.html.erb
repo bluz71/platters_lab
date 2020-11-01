@@ -1,6 +1,573 @@
-<section class="section">
+<section id="artist" class="section">
   <div class="container">
-    <h1 class="title">Artist</h1>
-    <hr>
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <h1 class="title mb-0">Various</h1>
+        <div class="divider"></div>
+        <div class="content">
+          <p>
+            Various artists, usually either a soundtrack album or a compilation album arranged around a theme.
+            <%= link_to "Wikipedia", "https://www.wikipedia.org/wiki/Compilation_album", target: "_blank", rel: "noopener noreferrer" %>
+          </p>
+          <%= fa_icon "globe" %>
+          <%= link_to("Various Artists", "https://www.last.fm/music/Various+Artists", target: "_blank") %>
+        </div>
+        <h2 class="title is-size-4">Albums</h2>
+        <h3 class="subtitle is-size-6 mb-0">(7 Albums)</h3>
+        <div class="tabs is-centered">
+          <ul>
+            <li class="is-active"><a>Newest</a></li>
+            <li><a>Oldest</a></li>
+            <li><a>Longest</a></li>
+            <li><a>Name</a></li>
+          </ul>
+        </div>
+        <div id="artist-albums">
+
+          <div class="media mb-4">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1158/small_Various--Once_Upon_A_Time_In_Hollywood_Soundtrack.jpg">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="is-size-5 is-overflowed">
+                <%= link_to "Once Upon A Time In Hollywood Soundtrack", album_path %>
+              </div>
+              <div class="is-size-7 mt-1 mb-2">
+                (22 Tracks, Time 67:52)
+              </div>
+              <div class="icons is-size-7 mt-2">
+                <%= link_to albums_path do %>
+                  <%= fa_icon "calendar", text: "2019" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "tag", text: "Soundtrack", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "comment-o", text: "6", class: "ml-2" %>
+                <% end %>
+              </div>
+              <div class="content">
+                <ul class="mt-2">
+                  <li>1. Roy Head And The Traits - Treat Her Right</li>
+                  <li>2. The Bob Seger System - Ramblin&#39; Gamblin&#39; Man</li>
+                  <li>3. Deep Purple - Hush</li>
+                  <li>4. The Village Callers - Hector</li>
+                  <li>5. Buchanan Brothers - Son Of A Lovin&#39; Man</li>
+                  <li>6. Chad &amp; Jeremy - Paxton Quigley&#39;s Had The Course</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="media mb-4">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1162/small_Various--Sing_Street_Soundtrack.jpg">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="is-size-5 is-overflowed">
+                <%= link_to "Sing Street Soundtrack", album_path %>
+              </div>
+              <div class="is-size-7 mt-1 mb-2">
+                (17 Tracks, Time 51:08)
+              </div>
+              <div class="icons is-size-7 mt-2">
+                <%= link_to albums_path do %>
+                  <%= fa_icon "calendar", text: "2016" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "tag", text: "Rock", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "comment-o", text: "16", class: "ml-2" %>
+                <% end %>
+              </div>
+              <div class="content">
+                <ul class="mt-2">
+                  <li>1. Sing Street - Rock N&#39; Roll Is A Risk</li>
+                  <li>2. Motorhead - Stay Clean</li>
+                  <li>3. Sing Street - The Riddle Of The Model</li>
+                  <li>4. Duran Duran - Rio</li>
+                  <li>5. Sing Street - Up</li>
+                  <li>6. Sing Street - To Find You</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="media mb-4">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1152/small_Various--100_Essential_1980s.jpg">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="is-size-5 is-overflowed">
+                <%= link_to "100 Essential 1980s", album_path %>
+              </div>
+              <div class="is-size-7 mt-1 mb-2">
+                (100 Tracks, Time 392:19)
+              </div>
+              <div class="icons is-size-7 mt-2">
+                <%= link_to albums_path do %>
+                  <%= fa_icon "calendar", text: "2008" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "tag", text: "Pop", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "comment-o", text: "38", class: "ml-2" %>
+                <% end %>
+              </div>
+              <div class="content">
+                <ul class="mt-2">
+                  <li>1. Soft Cell - Tainted Love</li>
+                  <li>2. Yazz - The Only Way Is Up</li>
+                  <li>3. Kool &amp; The Gang - Get Down On It</li>
+                  <li>4. Cameo - Word Up</li>
+                  <li>5. Commodores - Nightshift</li>
+                  <li>6. Leon Haywood - Don&#39;t Push It Don&#39;t Force It</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="media mb-4">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1151/small_Various--100_Best_Film_Classics.jpg">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="is-size-5 is-overflowed">
+                <%= link_to "100 Best Film Classics", album_path %>
+              </div>
+              <div class="is-size-7 mt-1 mb-2">
+                (100 Tracks, Time 421:22)
+              </div>
+              <div class="icons is-size-7 mt-2">
+                <%= link_to albums_path do %>
+                  <%= fa_icon "calendar", text: "2006" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "tag", text: "Classical", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "comment-o", text: "28", class: "ml-2" %>
+                <% end %>
+              </div>
+              <div class="content">
+                <ul class="mt-2">
+                  <li>1. Richard Strauss - 2001: A Space Odyssey</li>
+                  <li>2. Wagner - Apocalypse Now</li>
+                  <li>3. Mozart - Amadeus</li>
+                  <li>4. James Horner - Titanic</li>
+                  <li>5. John Barry - You Only Live Twice</li>
+                  <li>6. John Williams - Star Wars</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="media mb-4">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1157/small_Various--Music_From_The_Motion_Picture_Pulp_Fiction.jpg">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="is-size-5 is-overflowed">
+                <%= link_to "Music From The Motion Picture Pulp Fiction", album_path %>
+              </div>
+              <div class="is-size-7 mt-1 mb-2">
+                (16 Tracks, Time 41:29)
+              </div>
+              <div class="icons is-size-7 mt-2">
+                <%= link_to albums_path do %>
+                  <%= fa_icon "calendar", text: "1994" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "tag", text: "Soundtrack", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "comment-o", text: "48", class: "ml-2" %>
+                <% end %>
+              </div>
+              <div class="content">
+                <ul class="mt-2">
+                  <li>1. Dialogue &amp; Dick Dale - Pumpkin And Honey Bunny / Misirlou</li>
+                  <li>2. Dialogue - Royale With Cheese</li>
+                  <li>3. Kool &amp; The Gang - Jungle Boogie</li>
+                  <li>4. Al Green - Let&#39;s Stay Together</li>
+                  <li>5. The Tornadoes - Bustin&#39; Surfboards</li>
+                  <li>6. Rick Nelson - Lonesome Town</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="media mb-4">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1164/small_Various--The_Classic_Experience.jpg">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="is-size-5 is-overflowed">
+                <%= link_to "The Classic Experience", album_path %>
+              </div>
+              <div class="is-size-7 mt-1 mb-2">
+                (33 Tracks, Time 138:57)
+              </div>
+              <div class="icons is-size-7 mt-2">
+                <%= link_to albums_path do %>
+                  <%= fa_icon "calendar", text: "1988" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "tag", text: "Classical", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "comment-o", text: "33", class: "ml-2" %>
+                <% end %>
+              </div>
+              <div class="content">
+                <ul class="mt-2">
+                  <li>1. Handel - Arrival Of The Queen Of Sheba</li>
+                  <li>2. Sibelius - Intermezzo From &#39;Karelia Suite&#39;</li>
+                  <li>3. Ravel - Bolero</li>
+                  <li>4. Bach - Air</li>
+                  <li>5. Khachaturian - Adagio From &#39;Spartacus&#39;</li>
+                  <li>6. Gershwin - Rhapsody In Blue</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="media mb-4">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1161/small_Various--Saturday_Night_Fever_Soundtrack.jpg">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="is-size-5 is-overflowed">
+                <%= link_to "Saturday Night Fever Soundtrack", album_path %>
+              </div>
+              <div class="is-size-7 mt-1 mb-2">
+                (17 Tracks, Time 76:13)
+              </div>
+              <div class="icons is-size-7 mt-2">
+                <%= link_to albums_path do %>
+                  <%= fa_icon "calendar", text: "1977" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "tag", text: "Disco", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path do %>
+                  <%= fa_icon "comment-o", text: "33", class: "ml-2" %>
+                <% end %>
+              </div>
+              <div class="content">
+                <ul class="mt-2">
+                  <li>1. Bee Gees - Stayin&#39; Alive</li>
+                  <li>2. Bee Gees - How Deep Is Your Love</li>
+                  <li>3. Bee Gees - Night Fever</li>
+                  <li>4. Bee Gees - More Than A Woman</li>
+                  <li>5. Yvonne Elliman - If I Can&#39;t Have You</li>
+                  <li>6. Walter Murphy - A Fifth Of Beethoven</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+        </div>
+
+        <h2 class="title is-size-4">Comments</h2>
+        <h3 class="subtitle is-size-6 mb-0">(30 Comments)</h3>
+        <div class="divider"></div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/e3a798fb9b839b3c688e44bdf3a6a423?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "iliana77", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                yesterday at 2:53pm
+              </div>
+              <div class="content">
+                <p>
+                  Twee pour-over cold-pressed photo booth fingerstache beard raw denim. Ramps chillwave yr xoxo seitan microdosing chambray. Letterpress fashion axe loko ennui sustainable stumptown slow-carb.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "nella_schmeler94", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                yesterday at 2:53pm
+              </div>
+              <div class="content">
+                <p>
+                  3 wolf moon banjo fap pinterest fashion axe deep v. Poutine pop-up +1 wolf heirloom. Artisan tacos hoodie.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "ewell39", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                on July 30
+              </div>
+              <div class="content">
+                <p>
+                  Quinoa crucifix vhs deep v. Put a bird on it polaroid small batch letterpress keffiyeh asymmetrical. Swag yolo readymade meh echo single-origin coffee. Truffaut mumblecore kogi echo fap.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/ebfb6ad212e8a4aa457fdbaabf1f28b2?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "liza10", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Skateboard neutra narwhal hoodie plaid photo booth cleanse. Viral dreamcatcher intelligentsia knausgaard hammock. Kogi +1 skateboard park. Seitan slow-carb bespoke post-ironic yr cold-pressed. Blog selfies everyday chartreuse kogi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/c0ad110a5a1fbec8378cd34274b6c59f?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "kirsten34", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Taxidermy pbr&b knausgaard pabst meh selvage. Wes anderson goth banjo. Hoodie photo booth pitchfork. Pitchfork pinterest blue bottle farm-to-table meggings. Pbr&b you probably haven't heard of them viral hashtag hammock kombucha.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "ewell39", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Microdosing park echo. Aesthetic lumbersexual gentrify celiac mumblecore franzen poutine occupy. Beard 3 wolf moon deep v park. Blog salvia tacos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "nella_schmeler94", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Gastropub iphone beard shabby chic tofu artisan. Chillwave offal fingerstache hammock. Kickstarter shabby chic vegan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "ewell39", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Organic squid sartorial letterpress fanny pack health dreamcatcher five dollar toast. Small batch cleanse lumbersexual. Post-ironic bespoke sriracha. Humblebrag park next level biodiesel fanny pack tousled kombucha.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/702376ea382866afea31a0931ca3e21f?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "filomena_cummings67", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Seitan salvia sartorial listicle next level messenger bag. Roof vice cold-pressed salvia semiotics. Organic cray portland intelligentsia craft beer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded" src="https://gravatar.com/avatar/a3fac396421b05f2e3777d0427a1b100?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "hayley63", comments_path %>
+              </span>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Taxidermy asymmetrical roof quinoa williamsburg. Keytar ugh echo flexitarian $@!#%. Taxidermy knausgaard kickstarter cleanse. Sartorial fixie chambray. Shoreditch helvetica goth cray chia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
