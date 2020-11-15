@@ -1,712 +1,702 @@
-<section id="platters-splash" class="section">
-  <div class="container box has-background-white-bis">
-    <div class="columns">
-      <div class="column">
-        <section class="hero">
-          <div class="hero-body">
-            <div class="container has-text-centered">
-              <h1 class="platters-title">
-                Platters
-              </h1>
-              <h2 class="platters-subtitle">
-                An album collection web application developed using modern web technologies.
-              </h2>
-              <div class="mt-5">
-                <%= link_to "About", about_path, class: "button is-link is-large" %>
-                <%= link_to "Sign up", sign_up_path, class: "button is-link is-large" %>
+<div id="home">
+  <section id="platters-splash" class="section">
+    <div class="container box has-background-white-bis">
+      <div class="columns">
+        <div class="column">
+          <section class="hero">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <h1 class="platters-title">
+                  Platters
+                </h1>
+                <h2 class="platters-subtitle">
+                  An album collection web application developed using modern web technologies.
+                </h2>
+                <div class="mt-5">
+                  <%= link_to "About", about_path, class: "button is-link is-large" %>
+                  <%= link_to "Sign up", sign_up_path, class: "button is-link is-large" %>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-      <div class="column">
-        <figure class="image platters-logo">
-          <%= image_pack_tag "platters-black.svg" %>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-fullwidth">
-  <section class="hero is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title has-text-weight-medium has-text-centered">
-          Prime technologies used by the Platters application.
-        </h1>
-        <div class="columns mt-5">
-          <div class="column has-text-centered">
-            <div class="is-size-1">
-              <%= fa_icon "diamond" %>
-            </div>
-            <div class="is-size-4">
-              Ruby on Rails server-side web application framework
-            </div>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="is-size-1">
-              <%= fa_icon "database" %>
-            </div>
-            <div class="is-size-4">
-              PostgreSQL and Redis database systems
-            </div>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="is-size-1">
-              <%= fa_icon "tablet" %>
-            </div>
-            <div class="is-size-4">
-              Bootstrap responsive front-end web framework
-            </div>
-          </div>
+          </section>
         </div>
-        <div class="has-text-centered mt-5">
-          <%= link_to "Complete details", details_path, class: "button is-link" %>
+        <div class="column">
+          <figure class="image platters-logo">
+            <%= image_pack_tag "platters-black.svg" %>
+          </figure>
         </div>
       </div>
     </div>
   </section>
-</section>
 
-<section id="album-of-the-day" class="section">
-  <div class="container">
-    <h1 class="title is-size-4 mb-0">
-      Album of the day
-    </h1>
-    <div class="divider"></div>
+  <section class="section is-fullwidth">
+    <section class="hero is-dark">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-weight-medium has-text-centered">
+            Prime technologies used by the Platters application.
+          </h1>
+          <div class="columns mt-5">
+            <div class="column has-text-centered">
+              <div class="is-size-1">
+                <%= fa_icon "diamond" %>
+              </div>
+              <div class="is-size-4">
+                Ruby on Rails server-side web application framework
+              </div>
+            </div>
 
-    <div class="box has-background-white-bis">
-      <div class="has-text-centered has-text-weight-light">
-        <div>
-          <span class="is-size-2">
-            <%= link_to "Born To Run", album_path %>
-          </span>
-          <span class="is-size-3">by </span>
-          <span class="is-size-3">
-            <%= link_to "Bruce Springsteen", artist_path %>
-          </span>
+            <div class="column has-text-centered">
+              <div class="is-size-1">
+                <%= fa_icon "database" %>
+              </div>
+              <div class="is-size-4">
+                PostgreSQL and Redis database systems
+              </div>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="is-size-1">
+                <%= fa_icon "tablet" %>
+              </div>
+              <div class="is-size-4">
+                Bootstrap responsive front-end web framework
+              </div>
+            </div>
+          </div>
+          <div class="has-text-centered mt-5">
+            <%= link_to "Complete details", details_path, class: "button is-link" %>
+          </div>
         </div>
-        <figure class="image is-inline-block mt-4 mb-4">
-          <%= link_to album_path do %>
-            <%= image_tag "https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/180/Bruce_Springsteen--Born_To_Run.jpg"%>
-          <% end %>
-        </figure>
+      </div>
+    </section>
+  </section>
+
+  <section id="album-of-the-day" class="section">
+    <div class="container">
+      <h1 class="title is-size-4 mb-0">
+        Album of the day
+      </h1>
+      <div class="divider"></div>
+
+      <div class="box has-background-white-bis">
+        <div class="has-text-centered has-text-weight-light">
+          <div>
+            <span class="is-size-2">
+              <%= link_to "Born To Run", album_path %>
+            </span>
+            <span class="is-size-3">by </span>
+            <span class="is-size-3">
+              <%= link_to "Bruce Springsteen", artist_path %>
+            </span>
+          </div>
+          <figure class="image is-inline-block mt-4 mb-4">
+            <%= link_to album_path do %>
+              <%= image_tag "https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/180/Bruce_Springsteen--Born_To_Run.jpg"%>
+            <% end %>
+          </figure>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="albums" class="section">
-  <div class="container">
-    <h1 class="title is-size-4 mb-0">
-      New Albums
-    </h1>
-    <div class="divider"></div>
-    <div class="columns is-desktop is-multiline">
+  <section id="albums" class="section">
+    <div class="container">
+      <h1 class="title is-size-4 mb-0">
+        New Albums
+      </h1>
+      <div class="divider"></div>
+      <div class="columns is-desktop is-multiline">
 
-      <div class="column is-half-desktop album">
-        <div class="box has-background-white-bis">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1271/small_Psychotic_Waltz--The_GodShaped_Void.jpg">
-                <% end %>
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="has-text-centered has-text-weight-light">
-                <div class="is-size-3 is-overflowed">
-                  <%= link_to "The God-Shaped Void", album_path %>
-                </div>
-                <div class="is-size-5 is-overflowed">
-                  by
-                  <%= link_to "Psychotic Waltz", artist_path %>
-                  <span class="is-size-6 has-text-grey">(11 tracks)</span>
-                </div>
-                <div class="icons">
-                  <div class="is-size-7">
+        <div class="column is-half-desktop album">
+          <div class="box has-background-white-bis">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <%= link_to album_path do %>
+                    <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1271/small_Psychotic_Waltz--The_GodShaped_Void.jpg">
+                  <% end %>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="has-text-centered has-text-weight-light">
+                  <div class="is-size-3 is-overflowed">
+                    <%= link_to "The God-Shaped Void", album_path %>
+                  </div>
+                  <div class="is-size-5 is-overflowed">
+                    by
+                    <%= link_to "Psychotic Waltz", artist_path %>
+                    <span class="is-size-6 has-text-grey">(11 tracks)</span>
+                  </div>
+                  <div class="is-size-7 mt-2">
                     <%= link_to albums_path do %>
                       <%= fa_icon "calendar", text: "2020" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "tag", text: "Progressive Metal" %>
+                      <%= fa_icon "tag", text: "Progressive Metal", class: "ml-2" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "comment-o", text: "21" %>
+                      <%= fa_icon "comment-o", text: "21", class: "ml-2" %>
                     <% end %>
                   </div>
                 </div>
-              </div>
-              <div class="content">
-                <ul>
-                  <li>1. Devils And Angels</li>
-                  <li>2. Stranded</li>
-                  <li>3. Back To Black</li>
-                  <li>4. All The Bad Men</li>
-                  <li>5. The Fallen</li>
-                  <li>6. While The Spiders Spin</li>
-                  <li>...</li>
-                </ul>
+                <div class="content">
+                  <ul class="is-size-mid-6-7">
+                    <li>1. Devils And Angels</li>
+                    <li>2. Stranded</li>
+                    <li>3. Back To Black</li>
+                    <li>4. All The Bad Men</li>
+                    <li>5. The Fallen</li>
+                    <li>6. While The Spiders Spin</li>
+                    <li>...</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="column is-half-desktop album">
-        <div class="box has-background-white-bis">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1270/small_Falconer--From_A_Dying_Ember.jpg">
-                <% end %>
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="has-text-centered has-text-weight-light">
-                <div class="is-size-3 is-overflowed">
-                  <%= link_to "From A Dying Ember", album_path %>
-                </div>
-                <div class="is-size-5 is-overflowed">
-                  by
-                  <%= link_to "Falconer", artist_path %>
-                  <span class="is-size-6 has-text-grey">(12 tracks)</span>
-                </div>
-                <div class="icons">
-                  <div class="is-size-7">
+        <div class="column is-half-desktop album">
+          <div class="box has-background-white-bis">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <%= link_to album_path do %>
+                    <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1270/small_Falconer--From_A_Dying_Ember.jpg">
+                  <% end %>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="has-text-centered has-text-weight-light">
+                  <div class="is-size-3 is-overflowed">
+                    <%= link_to "From A Dying Ember", album_path %>
+                  </div>
+                  <div class="is-size-5 is-overflowed">
+                    by
+                    <%= link_to "Falconer", artist_path %>
+                    <span class="is-size-6 has-text-grey">(12 tracks)</span>
+                  </div>
+                  <div class="is-size-7 mt-2">
                     <%= link_to albums_path do %>
                       <%= fa_icon "calendar", text: "2020" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "tag", text: "Power Metal" %>
+                      <%= fa_icon "tag", text: "Power Metal", class: "ml-2" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "comment-o", text: "38" %>
+                      <%= fa_icon "comment-o", text: "38", class: "ml-2" %>
                     <% end %>
                   </div>
                 </div>
-              </div>
-              <div class="content">
-                <ul>
-                  <li>1. Kings And Queens</li>
-                  <li>2. Desert Dreams</li>
-                  <li>3. Redeem And Repent</li>
-                  <li>4. Bland Sump Och Dy</li>
-                  <li>5. Fool's Crusade</li>
-                  <li>6. Garnets And A Gilded Rose</li>
-                  <li>...</li>
-                </ul>
+                <div class="content">
+                  <ul class="is-size-mid-6-7">
+                    <li>1. Kings And Queens</li>
+                    <li>2. Desert Dreams</li>
+                    <li>3. Redeem And Repent</li>
+                    <li>4. Bland Sump Och Dy</li>
+                    <li>5. Fool's Crusade</li>
+                    <li>6. Garnets And A Gilded Rose</li>
+                    <li>...</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="column is-half-desktop album">
-        <div class="box has-background-white-bis">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1268/small_Green_Carnation--Leaves_Of_Yesteryear.jpg">
-                <% end %>
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="has-text-centered has-text-weight-light">
-                <div class="is-size-3 is-overflowed">
-                  <%= link_to "Leaves Of Yesteryear", album_path %>
-                </div>
-                <div class="is-size-5 is-overflowed">
-                  by
-                  <%= link_to "Green Carnation", artist_path %>
-                  <span class="is-size-6 has-text-grey">(5 tracks)</span>
-                </div>
-                <div class="icons">
-                  <div class="is-size-7">
+        <div class="column is-half-desktop album">
+          <div class="box has-background-white-bis">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <%= link_to album_path do %>
+                    <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1268/small_Green_Carnation--Leaves_Of_Yesteryear.jpg">
+                  <% end %>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="has-text-centered has-text-weight-light">
+                  <div class="is-size-3 is-overflowed">
+                    <%= link_to "Leaves Of Yesteryear", album_path %>
+                  </div>
+                  <div class="is-size-5 is-overflowed">
+                    by
+                    <%= link_to "Green Carnation", artist_path %>
+                    <span class="is-size-6 has-text-grey">(5 tracks)</span>
+                  </div>
+                  <div class="is-size-7 mt-2">
                     <%= link_to albums_path do %>
                       <%= fa_icon "calendar", text: "2020" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "tag", text: "Progressive Metal" %>
+                      <%= fa_icon "tag", text: "Progressive Metal", class: "ml-2" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "comment-o", text: "33" %>
+                      <%= fa_icon "comment-o", text: "33", class: "ml-2" %>
                     <% end %>
                   </div>
                 </div>
-              </div>
-              <div class="content">
-                <ul>
-                  <li>1. Leaves Of Yesteryear</li>
-                  <li>2. Sentinels</li>
-                  <li>3. My Dark Reflections Of Life And Death</li>
-                  <li>4. Hounds</li>
-                  <li>5. Solitude</li>
-                  <li>&nbsp;</li>
-                  <li>&nbsp;</li>
-                </ul>
+                <div class="content">
+                  <ul class="is-size-mid-6-7">
+                    <li>1. Leaves Of Yesteryear</li>
+                    <li>2. Sentinels</li>
+                    <li>3. My Dark Reflections Of Life And Death</li>
+                    <li>4. Hounds</li>
+                    <li>5. Solitude</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="column is-half-desktop album">
-        <div class="box has-background-white-bis">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1265/small_Ashley_McBryde--Never_Will.jpg">
-                <% end %>
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="has-text-centered has-text-weight-light">
-                <div class="is-size-3 is-overflowed">
-                  <%= link_to "Never Will", album_path %>
-                </div>
-                <div class="is-size-5 is-overflowed">
-                  by
-                  <%= link_to "Ashley McBryde ", artist_path %>
-                  <span class="is-size-6 has-text-grey">(11 tracks)</span>
-                </div>
-                <div class="icons">
-                  <div class="is-size-7">
+        <div class="column is-half-desktop album">
+          <div class="box has-background-white-bis">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <%= link_to album_path do %>
+                    <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1265/small_Ashley_McBryde--Never_Will.jpg">
+                  <% end %>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="has-text-centered has-text-weight-light">
+                  <div class="is-size-3 is-overflowed">
+                    <%= link_to "Never Will", album_path %>
+                  </div>
+                  <div class="is-size-5 is-overflowed">
+                    by
+                    <%= link_to "Ashley McBryde ", artist_path %>
+                    <span class="is-size-6 has-text-grey">(11 tracks)</span>
+                  </div>
+                  <div class="is-size-7 mt-2">
                     <%= link_to albums_path do %>
                       <%= fa_icon "calendar", text: "2020" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "tag", text: "Country" %>
+                      <%= fa_icon "tag", text: "Country", class: "ml-2" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "comment-o", text: "4" %>
+                      <%= fa_icon "comment-o", text: "4", class: "ml-2" %>
                     <% end %>
                   </div>
                 </div>
-              </div>
-              <div class="content">
-                <ul>
-                  <li>1. Hang In There Girl</li>
-                  <li>2. One Night Standards</li>
-                  <li>3. Shut Up Sheila</li>
-                  <li>4. First Thing I Reach For</li>
-                  <li>5. Voodoo Doll</li>
-                  <li>6. Sparrow</li>
-                  <li>...</li>
-                </ul>
+                <div class="content">
+                  <ul class="is-size-mid-6-7">
+                    <li>1. Hang In There Girl</li>
+                    <li>2. One Night Standards</li>
+                    <li>3. Shut Up Sheila</li>
+                    <li>4. First Thing I Reach For</li>
+                    <li>5. Voodoo Doll</li>
+                    <li>6. Sparrow</li>
+                    <li>...</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="column is-half-desktop album">
-        <div class="box has-background-white-bis">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1263/small_Nightwish--Human_II_Nature.jpg">
-                <% end %>
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="has-text-centered has-text-weight-light">
-                <div class="is-size-3 is-overflowed">
-                  <%= link_to "Human II Nature", album_path %>
-                </div>
-                <div class="is-size-5 is-overflowed">
-                  by
-                  <%= link_to "Nightwish", artist_path %>
-                  <span class="is-size-6 has-text-grey">(9 tracks)</span>
-                </div>
-                <div class="icons">
-                  <div class="is-size-7">
+        <div class="column is-half-desktop album">
+          <div class="box has-background-white-bis">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <%= link_to album_path do %>
+                    <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1263/small_Nightwish--Human_II_Nature.jpg">
+                  <% end %>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="has-text-centered has-text-weight-light">
+                  <div class="is-size-3 is-overflowed">
+                    <%= link_to "Human II Nature", album_path %>
+                  </div>
+                  <div class="is-size-5 is-overflowed">
+                    by
+                    <%= link_to "Nightwish", artist_path %>
+                    <span class="is-size-6 has-text-grey">(9 tracks)</span>
+                  </div>
+                  <div class="is-size-7 mt-2">
                     <%= link_to albums_path do %>
                       <%= fa_icon "calendar", text: "2020" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "tag", text: "Symphonic Metal" %>
+                      <%= fa_icon "tag", text: "Symphonic Metal", class: "ml-2" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "comment-o", text: "30" %>
+                      <%= fa_icon "comment-o", text: "30", class: "ml-2" %>
                     <% end %>
                   </div>
                 </div>
-              </div>
-              <div class="content">
-                <ul>
-                  <li>1. Music</li>
-                  <li>2. Noise</li>
-                  <li>3. Shoemaker</li>
-                  <li>4. Harvest</li>
-                  <li>5. Pan</li>
-                  <li>6. How's The Heart?</li>
-                  <li>...</li>
-                </ul>
+                <div class="content">
+                  <ul class="is-size-mid-6-7">
+                    <li>1. Music</li>
+                    <li>2. Noise</li>
+                    <li>3. Shoemaker</li>
+                    <li>4. Harvest</li>
+                    <li>5. Pan</li>
+                    <li>6. How's The Heart?</li>
+                    <li>...</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="column is-half-desktop album">
-        <div class="box has-background-white-bis">
-          <div class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1254/small_Heat--Heat_II.jpg">
-                <% end %>
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="has-text-centered has-text-weight-light">
-                <div class="is-size-3 is-overflowed">
-                  <%= link_to "H.e.a.t II", album_path %>
-                </div>
-                <div class="is-size-5 is-overflowed">
-                  by
-                  <%= link_to "H.e.a.t", artist_path %>
-                  <span class="is-size-6 has-text-grey">(12 tracks)</span>
-                </div>
-                <div class="icons">
-                  <div class="is-size-7">
+        <div class="column is-half-desktop album">
+          <div class="box has-background-white-bis">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <%= link_to album_path do %>
+                    <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1254/small_Heat--Heat_II.jpg">
+                  <% end %>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="has-text-centered has-text-weight-light">
+                  <div class="is-size-3 is-overflowed">
+                    <%= link_to "H.e.a.t II", album_path %>
+                  </div>
+                  <div class="is-size-5 is-overflowed">
+                    by
+                    <%= link_to "H.e.a.t", artist_path %>
+                    <span class="is-size-6 has-text-grey">(12 tracks)</span>
+                  </div>
+                  <div class="is-size-7 mt-2">
                     <%= link_to albums_path do %>
                       <%= fa_icon "calendar", text: "2020" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "tag", text: "Hard Rock" %>
+                      <%= fa_icon "tag", text: "Hard Rock", class: "ml-2" %>
                     <% end %>
                     <%= link_to albums_path do %>
-                      <%= fa_icon "comment-o", text: "3" %>
+                      <%= fa_icon "comment-o", text: "3", class: "ml-2" %>
                     <% end %>
                   </div>
                 </div>
+                <div class="content">
+                  <ul class="is-size-mid-6-7">
+                    <li>1. Rock Your Body</li>
+                    <li>2. Dangerous Ground</li>
+                    <li>3. Come Clean</li>
+                    <li>4. Victory</li>
+                    <li>5. We Are Gods</li>
+                    <li>6. Adrenaline</li>
+                    <li>...</li>
+                  </ul>
+                </div>
               </div>
-              <div class="content">
-                <ul>
-                  <li>1. Rock Your Body</li>
-                  <li>2. Dangerous Ground</li>
-                  <li>3. Come Clean</li>
-                  <li>4. Victory</li>
-                  <li>5. We Are Gods</li>
-                  <li>6. Adrenaline</li>
-                  <li>...</li>
-                </ul>
-              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-size-4 mb-0">
+        New Comments
+      </h1>
+      <div class="divider"></div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/e3a798fb9b839b3c688e44bdf3a6a423?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "iliana77", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in Pagan's Mind /</span>
+              <%= link_to "Enigmatic Calling", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              yesterday at 2:53pm
+            </div>
+            <div class="content">
+              <p>
+                Twee pour-over cold-pressed photo booth fingerstache beard raw denim. Ramps chillwave yr xoxo seitan microdosing chambray. Letterpress fashion axe loko ennui sustainable stumptown slow-carb.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "nella_schmeler94", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in The Beatles /</span>
+              <%= link_to "Abbey Road", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              yesterday at 2:53pm
+            </div>
+            <div class="content">
+              <p>
+                3 wolf moon banjo fap pinterest fashion axe deep v. Poutine pop-up +1 wolf heirloom. Artisan tacos hoodie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "ewell39", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in David Bowie /</span>
+              <%= link_to "Let's Dance", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              on July 30
+            </div>
+            <div class="content">
+              <p>
+                Quinoa crucifix vhs deep v. Put a bird on it polaroid small batch letterpress keffiyeh asymmetrical. Swag yolo readymade meh echo single-origin coffee. Truffaut mumblecore kogi echo fap.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/ebfb6ad212e8a4aa457fdbaabf1f28b2?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "liza10", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in ABBA /</span>
+              <%= link_to "Voulez-Vous", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              on Jul 25
+            </div>
+            <div class="content">
+              <p>
+                Skateboard neutra narwhal hoodie plaid photo booth cleanse. Viral dreamcatcher intelligentsia knausgaard hammock. Kogi +1 skateboard park. Seitan slow-carb bespoke post-ironic yr cold-pressed. Blog selfies everyday chartreuse kogi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/c0ad110a5a1fbec8378cd34274b6c59f?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "kirsten34", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in Brainstorm /</span>
+              <%= link_to "Liquid Monster", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              on Jul 25
+            </div>
+            <div class="content">
+              <p>
+                Taxidermy pbr&b knausgaard pabst meh selvage. Wes anderson goth banjo. Hoodie photo booth pitchfork. Pitchfork pinterest blue bottle farm-to-table meggings. Pbr&b you probably haven't heard of them viral hashtag hammock kombucha.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "ewell39", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in Heart /</span>
+              <%= link_to "Dreamboat Annie", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              on Jul 25
+            </div>
+            <div class="content">
+              <p>
+                Microdosing park echo. Aesthetic lumbersexual gentrify celiac mumblecore franzen poutine occupy. Beard 3 wolf moon deep v park. Blog salvia tacos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "nella_schmeler94", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in The Angels /</span>
+              <%= link_to "Face To Face", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              on Jul 25
+            </div>
+            <div class="content">
+              <p>
+                Gastropub iphone beard shabby chic tofu artisan. Chillwave offal fingerstache hammock. Kickstarter shabby chic vegan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "ewell39", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in Change /</span>
+              <%= link_to "Miracles", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              on Jul 25
+            </div>
+            <div class="content">
+              <p>
+                Organic squid sartorial letterpress fanny pack health dreamcatcher five dollar toast. Small batch cleanse lumbersexual. Post-ironic bespoke sriracha. Humblebrag park next level biodiesel fanny pack tousled kombucha.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/702376ea382866afea31a0931ca3e21f?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "filomena_cummings67", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in Seventh Key /</span>
+              <%= link_to "The Raging Fire", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              on Jul 25
+            </div>
+            <div class="content">
+              <p>
+                Seitan salvia sartorial listicle next level messenger bag. Roof vice cold-pressed salvia semiotics. Organic cray portland intelligentsia craft beer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box has-background-white-ter">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <%= link_to album_path do %>
+                <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/a3fac396421b05f2e3777d0427a1b100?s=80&r=pg&d=identicon">
+              <% end %>
+            </figure>
+          </div>
+          <div class="media-content">
+            <span class="is-size-5">
+              <%= link_to "hayley63", comments_path %>
+            </span>
+            <span class="is-size-6">
+              <span class="has-text-weight-light">posted in Dire Straits /</span>
+              <%= link_to "Making Movies", album_path %>
+            </span>
+            <div class="is-size-7 mt-1 mb-2">
+              on Jul 25
+            </div>
+            <div class="content">
+              <p>
+                Taxidermy asymmetrical roof quinoa williamsburg. Keytar ugh echo flexitarian $@!#%. Taxidermy knausgaard kickstarter cleanse. Sartorial fixie chambray. Shoreditch helvetica goth cray chia.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
     </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h1 class="title is-size-4 mb-0">
-      New Comments
-    </h1>
-    <div class="divider"></div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/e3a798fb9b839b3c688e44bdf3a6a423?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "iliana77", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in Pagan's Mind /</span>
-            <%= link_to "Enigmatic Calling", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            yesterday at 2:53pm
-          </div>
-          <div class="content">
-            <p>
-              Twee pour-over cold-pressed photo booth fingerstache beard raw denim. Ramps chillwave yr xoxo seitan microdosing chambray. Letterpress fashion axe loko ennui sustainable stumptown slow-carb.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "nella_schmeler94", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in The Beatles /</span>
-            <%= link_to "Abbey Road", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            yesterday at 2:53pm
-          </div>
-          <div class="content">
-            <p>
-              3 wolf moon banjo fap pinterest fashion axe deep v. Poutine pop-up +1 wolf heirloom. Artisan tacos hoodie.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "ewell39", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in David Bowie /</span>
-            <%= link_to "Let's Dance", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            on July 30
-          </div>
-          <div class="content">
-            <p>
-              Quinoa crucifix vhs deep v. Put a bird on it polaroid small batch letterpress keffiyeh asymmetrical. Swag yolo readymade meh echo single-origin coffee. Truffaut mumblecore kogi echo fap.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/ebfb6ad212e8a4aa457fdbaabf1f28b2?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "liza10", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in ABBA /</span>
-            <%= link_to "Voulez-Vous", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            on Jul 25
-          </div>
-          <div class="content">
-            <p>
-              Skateboard neutra narwhal hoodie plaid photo booth cleanse. Viral dreamcatcher intelligentsia knausgaard hammock. Kogi +1 skateboard park. Seitan slow-carb bespoke post-ironic yr cold-pressed. Blog selfies everyday chartreuse kogi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/c0ad110a5a1fbec8378cd34274b6c59f?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "kirsten34", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in Brainstorm /</span>
-            <%= link_to "Liquid Monster", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            on Jul 25
-          </div>
-          <div class="content">
-            <p>
-              Taxidermy pbr&b knausgaard pabst meh selvage. Wes anderson goth banjo. Hoodie photo booth pitchfork. Pitchfork pinterest blue bottle farm-to-table meggings. Pbr&b you probably haven't heard of them viral hashtag hammock kombucha.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "ewell39", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in Heart /</span>
-            <%= link_to "Dreamboat Annie", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            on Jul 25
-          </div>
-          <div class="content">
-            <p>
-              Microdosing park echo. Aesthetic lumbersexual gentrify celiac mumblecore franzen poutine occupy. Beard 3 wolf moon deep v park. Blog salvia tacos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "nella_schmeler94", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in The Angels /</span>
-            <%= link_to "Face To Face", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            on Jul 25
-          </div>
-          <div class="content">
-            <p>
-              Gastropub iphone beard shabby chic tofu artisan. Chillwave offal fingerstache hammock. Kickstarter shabby chic vegan.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "ewell39", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in Change /</span>
-            <%= link_to "Miracles", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            on Jul 25
-          </div>
-          <div class="content">
-            <p>
-              Organic squid sartorial letterpress fanny pack health dreamcatcher five dollar toast. Small batch cleanse lumbersexual. Post-ironic bespoke sriracha. Humblebrag park next level biodiesel fanny pack tousled kombucha.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/702376ea382866afea31a0931ca3e21f?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "filomena_cummings67", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in Seventh Key /</span>
-            <%= link_to "The Raging Fire", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            on Jul 25
-          </div>
-          <div class="content">
-            <p>
-              Seitan salvia sartorial listicle next level messenger bag. Roof vice cold-pressed salvia semiotics. Organic cray portland intelligentsia craft beer.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box has-background-white-ter">
-      <div class="media">
-        <div class="media-left">
-          <figure class="image is-48x48">
-            <%= link_to album_path do %>
-              <img class="is-rounded" src="https://gravatar.com/avatar/a3fac396421b05f2e3777d0427a1b100?s=80&r=pg&d=identicon">
-            <% end %>
-          </figure>
-        </div>
-        <div class="media-content">
-          <span class="is-size-5">
-            <%= link_to "hayley63", comments_path %>
-          </span>
-          <span class="is-size-6">
-            <span class="has-text-weight-light">posted in Dire Straits /</span>
-            <%= link_to "Making Movies", album_path %>
-          </span>
-          <div class="is-size-7 mt-1 mb-2">
-            on Jul 25
-          </div>
-          <div class="content">
-            <p>
-              Taxidermy asymmetrical roof quinoa williamsburg. Keytar ugh echo flexitarian $@!#%. Taxidermy knausgaard kickstarter cleanse. Sartorial fixie chambray. Shoreditch helvetica goth cray chia.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+  </section>
+</div>
