@@ -30,6 +30,7 @@ $fa-font-path: "~font-awesome/fonts/";
 // Yeti colors.
 $color-grey-dark:    #222;
 $color-grey-mid:     #ccc;
+$color-grey-mid-ter: #ddd;
 $color-grey-light:   #eee;
 $color-grey-lighter: #f5f5f5;
 $color-blue:         #3273dc;
@@ -242,6 +243,10 @@ body {
 }
 
 #artist {
+  .button.is-light {
+    border-color: $color-grey-mid-ter;
+  }
+
   #artist-albums {
     .media-content {
       min-width: 0;
