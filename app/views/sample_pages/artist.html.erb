@@ -2,8 +2,22 @@
   <div class="container">
     <div class="columns">
       <div class="column is-10 is-offset-1">
-        <h1 class="title mb-0">Various</h1>
+        <div class="is-pulled-left">
+          <h1 class="title mb-0">Various</h1>
+        </div>
+        <% if signed_in? %>
+          <div class="is-pulled-right mt-3">
+            <%= link_to artist_path, class: "button is-danger", method: :delete, data: {confirm: "Are you sure you want to remove Artist?"} do %>
+              <%= fa_icon "remove" %>&nbsp;Remove
+            <% end %>
+            <%= link_to new_artist_path, class: "button is-link" do %>
+              <%= fa_icon "edit" %>&nbsp;Edit
+            <% end %>
+          </div>
+        <% end %>
+        <div class="is-clearfix"></div>
         <div class="divider"></div>
+
         <div class="content">
           <p>
             Various artists, usually either a soundtrack album or a compilation album arranged around a theme.
@@ -12,8 +26,20 @@
           <%= fa_icon "globe" %>
           <%= link_to("Various Artists", "https://www.last.fm/music/Various+Artists", target: "_blank") %>
         </div>
-        <h2 class="title is-size-4">Albums</h2>
-        <h3 class="subtitle is-size-6 mb-0">(7 Albums)</h3>
+
+        <div class="is-pulled-left">
+          <h2 class="title is-size-4">Albums</h2>
+          <h3 class="subtitle is-size-6 mb-0">(7 Albums)</h3>
+        </div>
+        <% if signed_in? %>
+          <div class="is-pulled-right mt-3">
+            <%= link_to new_album_path, class: "button is-link" do %>
+              <%= fa_icon "plus" %>&nbsp;Album
+            <% end %>
+          </div>
+        <% end %>
+        <div class="is-clearfix"></div>
+
         <div class="tabs is-centered">
           <ul>
             <li class="is-active"><a>Newest</a></li>
@@ -34,20 +60,28 @@
             </div>
             <div class="media-content">
               <div class="is-size-4 has-text-weight-light is-overflowed">
-                <%= link_to "Once Upon A Time In Hollywood Soundtrack", album_path %>
+                <%= link_to "Once Upon A Time In Hollywood Soundtrack", album_path, class: "is-link-custom" %>
               </div>
               <div class="is-size-mid-6-7 has-text-grey mt-1 mb-2">
                 (22 Tracks, Time 67:52)
               </div>
               <div class="has-text-weight-light is-size-7 mt-2">
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "calendar", text: "2019" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "tag", text: "Soundtrack", class: "ml-2" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "comment-o", text: "6", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path, class: "tag is-danger is-light ml-1" do %>
+                  <%= fa_icon "remove", class: "mr-1" %>
+                  Remove
+                <% end %>
+                <%= link_to albums_path, class: "tag is-link is-light ml-1" do %>
+                  <%= fa_icon "edit", class: "mr-1" %>
+                  Edit
                 <% end %>
               </div>
               <div class="content">
@@ -75,20 +109,28 @@
             </div>
             <div class="media-content">
               <div class="is-size-4 has-text-weight-light is-overflowed">
-                <%= link_to "Sing Street Soundtrack", album_path %>
+                <%= link_to "Sing Street Soundtrack", album_path, class: "is-link-custom" %>
               </div>
               <div class="is-size-mid-6-7 has-text-grey mt-1 mb-2">
                 (17 Tracks, Time 51:08)
               </div>
               <div class="has-text-weight-light is-size-7 mt-2">
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "calendar", text: "2016" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "tag", text: "Rock", class: "ml-2" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "comment-o", text: "16", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path, class: "tag is-danger is-light ml-1" do %>
+                  <%= fa_icon "remove", class: "mr-1" %>
+                  Remove
+                <% end %>
+                <%= link_to albums_path, class: "tag is-link is-light ml-1" do %>
+                  <%= fa_icon "edit", class: "mr-1" %>
+                  Edit
                 <% end %>
               </div>
               <div class="content">
@@ -116,20 +158,28 @@
             </div>
             <div class="media-content">
               <div class="is-size-4 has-text-weight-light is-overflowed">
-                <%= link_to "100 Essential 1980s", album_path %>
+                <%= link_to "100 Essential 1980s", album_path, class: "is-link-custom" %>
               </div>
               <div class="is-size-mid-6-7 has-text-grey mt-1 mb-2">
                 (100 Tracks, Time 392:19)
               </div>
               <div class="has-text-weight-light is-size-7 mt-2">
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "calendar", text: "2008" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "tag", text: "Pop", class: "ml-2" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "comment-o", text: "38", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path, class: "tag is-danger is-light ml-1" do %>
+                  <%= fa_icon "remove", class: "mr-1" %>
+                  Remove
+                <% end %>
+                <%= link_to albums_path, class: "tag is-link is-light ml-1" do %>
+                  <%= fa_icon "edit", class: "mr-1" %>
+                  Edit
                 <% end %>
               </div>
               <div class="content">
@@ -157,20 +207,28 @@
             </div>
             <div class="media-content">
               <div class="is-size-4 has-text-weight-light is-overflowed">
-                <%= link_to "100 Best Film Classics", album_path %>
+                <%= link_to "100 Best Film Classics", album_path, class: "is-link-custom" %>
               </div>
               <div class="is-size-mid-6-7 has-text-grey mt-1 mb-2">
                 (100 Tracks, Time 421:22)
               </div>
               <div class="has-text-weight-light is-size-7 mt-2">
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "calendar", text: "2006" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "tag", text: "Classical", class: "ml-2" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "comment-o", text: "28", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path, class: "tag is-danger is-light ml-1" do %>
+                  <%= fa_icon "remove", class: "mr-1" %>
+                  Remove
+                <% end %>
+                <%= link_to albums_path, class: "tag is-link is-light ml-1" do %>
+                  <%= fa_icon "edit", class: "mr-1" %>
+                  Edit
                 <% end %>
               </div>
               <div class="content">
@@ -198,20 +256,28 @@
             </div>
             <div class="media-content">
               <div class="is-size-4 has-text-weight-light is-overflowed">
-                <%= link_to "Music From The Motion Picture Pulp Fiction", album_path %>
+                <%= link_to "Music From The Motion Picture Pulp Fiction", album_path, class: "is-link-custom" %>
               </div>
               <div class="is-size-mid-6-7 has-text-grey mt-1 mb-2">
                 (16 Tracks, Time 41:29)
               </div>
               <div class="has-text-weight-light is-size-7 mt-2">
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "calendar", text: "1994" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "tag", text: "Soundtrack", class: "ml-2" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "comment-o", text: "48", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path, class: "tag is-danger is-light ml-1" do %>
+                  <%= fa_icon "remove", class: "mr-1" %>
+                  Remove
+                <% end %>
+                <%= link_to albums_path, class: "tag is-link is-light ml-1" do %>
+                  <%= fa_icon "edit", class: "mr-1" %>
+                  Edit
                 <% end %>
               </div>
               <div class="content">
@@ -239,20 +305,28 @@
             </div>
             <div class="media-content">
               <div class="is-size-4 has-text-weight-light is-overflowed">
-                <%= link_to "The Classic Experience", album_path %>
+                <%= link_to "The Classic Experience", album_path, class: "is-link-custom" %>
               </div>
               <div class="is-size-mid-6-7 has-text-grey mt-1 mb-2">
                 (33 Tracks, Time 138:57)
               </div>
               <div class="has-text-weight-light is-size-7 mt-2">
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "calendar", text: "1988" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "tag", text: "Classical", class: "ml-2" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "comment-o", text: "33", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path, class: "tag is-danger is-light ml-1" do %>
+                  <%= fa_icon "remove", class: "mr-1" %>
+                  Remove
+                <% end %>
+                <%= link_to albums_path, class: "tag is-link is-light ml-1" do %>
+                  <%= fa_icon "edit", class: "mr-1" %>
+                  Edit
                 <% end %>
               </div>
               <div class="content">
@@ -280,20 +354,28 @@
             </div>
             <div class="media-content">
               <div class="is-size-4 has-text-weight-light is-overflowed">
-                <%= link_to "Saturday Night Fever Soundtrack", album_path %>
+                <%= link_to "Saturday Night Fever Soundtrack", album_path, class: "is-link-custom" %>
               </div>
               <div class="is-size-mid-6-7 has-text-grey mt-1 mb-2">
                 (17 Tracks, Time 76:13)
               </div>
               <div class="has-text-weight-light is-size-7 mt-2">
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "calendar", text: "1977" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "tag", text: "Disco", class: "ml-2" %>
                 <% end %>
-                <%= link_to albums_path do %>
+                <%= link_to albums_path, class: "is-link-custom" do %>
                   <%= fa_icon "comment-o", text: "33", class: "ml-2" %>
+                <% end %>
+                <%= link_to albums_path, class: "tag is-danger is-light ml-1" do %>
+                  <%= fa_icon "remove", class: "mr-1" %>
+                  Remove
+                <% end %>
+                <%= link_to albums_path, class: "tag is-link is-light ml-1" do %>
+                  <%= fa_icon "edit", class: "mr-1" %>
+                  Edit
                 <% end %>
               </div>
               <div class="content">

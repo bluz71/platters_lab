@@ -40,4 +40,7 @@ class SamplePagesController < ApplicationController
 
   def new_artist
   end
+
+  def new_album
+  end
 end

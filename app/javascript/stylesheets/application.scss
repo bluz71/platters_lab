@@ -12,6 +12,7 @@ $label-color: #333;
 $notification-radius: 3px;
 $divider-margin-inner-size: 0px;
 $divider-margin-size: 0.5rem 0 25px;
+$tag-radius: 4px;
 
 // ===================================================================
 // Imports.
@@ -72,7 +73,15 @@ $color-red:          #f04124;
   font-size: 0.85rem;
 }
 
-.has-reversed-link-colors {
+.is-link-custom {
+  color: $color-grey-dark;
+
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+.has-link-custom-colors {
   a {
     color: $color-grey-dark;
 
@@ -114,7 +123,7 @@ body {
     li {
       display: inline;
 
-      @extend .has-reversed-link-colors;
+      @extend .has-link-custom-colors;
     }
   }
 }
@@ -151,7 +160,7 @@ body {
   }
 
   #album-of-the-day {
-    @extend .has-reversed-link-colors;
+    @extend .has-link-custom-colors;
 
     img {
       height: 400px;
@@ -209,7 +218,7 @@ body {
   }
 
   .album {
-    @extend .has-reversed-link-colors;
+    @extend .has-link-custom-colors;
 
     .media-left {
       img {
@@ -234,10 +243,13 @@ body {
 
 #artist {
   #artist-albums {
-    @extend .has-reversed-link-colors;
-
     .media-content {
       min-width: 0;
+
+      // Disable tag underline hovering.
+      a.tag:hover {
+        text-decoration: none;
+      }
 
       ul {
         list-style: none;
