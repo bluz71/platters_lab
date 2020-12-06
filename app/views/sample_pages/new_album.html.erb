@@ -3,6 +3,158 @@
     <div class="columns">
       <div class="column is-10 is-offset-1">
         <h1 class="title mb-0">Add Album</h1>
+        <div class="divider"></div>
+
+        <div class="box has-background-white-bis">
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Title</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text", placeholder="The Album">
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Genre</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="select">
+                  <select>
+                    <option>Choose</option>
+                    <option value="AOR">AOR</option>
+                    <option value="Acid Jazz">Acid Jazz</option>
+                    <option value="Alternative">Alternative</option>
+                    <option value="Alternative Metal">Alternative Metal</option>
+                    <option value="Art Rock">Art Rock</option>
+                    <option value="Blues">Blues</option>
+                    <option value="Classic Rock">Classic Rock</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Country">Country</option>
+                    <option value="Disco">Disco</option>
+                    <option value="Downtempo">Downtempo</option>
+                    <option value="Easy Listening">Easy Listening</option>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Folk">Folk</option>
+                    <option value="Freestyle">Freestyle</option>
+                    <option value="Funk">Funk</option>
+                    <option value="Glam Metal">Glam Metal</option>
+                    <option value="Grunge">Grunge</option>
+                    <option value="Hard Rock">Hard Rock</option>
+                    <option value="House">House</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Power Metal">Power Metal</option>
+                    <option value="Progressive Metal">Progressive Metal</option>
+                    <option value="Progressive Rock">Progressive Rock</option>
+                    <option value="R&amp;B">R&amp;B</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Rock &amp; Roll">Rock &amp; Roll</option>
+                    <option value="Soul">Soul</option>
+                    <option value="Soundtrack">Soundtrack</option>
+                    <option value="Southern Rock">Southern Rock</option>
+                    <option value="Stoner Rock">Stoner Rock</option>
+                    <option value="Symphonic Metal">Symphonic Metal</option>
+                    <option value="Symphonic Rock">Symphonic Rock</option></select>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <button class="button is-link is-light">
+                  <span class="icon">
+                    <%= fa_icon "plus" %>
+                  </span>
+                  <span>Genre</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Year</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input class="input" type="text", placeholder="2020">
+                  <span class="icon is-small is-left">
+                    <%= fa_icon("calendar") %>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Tracks</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control">
+                  <textarea class="textarea" rows="10" placeholder="First Track (5:26)"></textarea>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Cover</label>
+            </div>
+            <div class="field-body">
+              <div class="file">
+                <label class="file-label">
+                  <input class="file-input" type="file" name="resume">
+                  <span class="file-cta">
+                    <span class="file-icon">
+                      <%= fa_icon("upload") %>
+                    </span>
+                    <span class="file-label">
+                      Choose cover file…
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <!-- Left empty for spacing -->
+            </div>
+            <div class="field-body">
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button">
+                    Cancel
+                  </button>
+                </div>
+                <div class="control">
+                  <button class="button is-link">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
