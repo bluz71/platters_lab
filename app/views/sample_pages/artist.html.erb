@@ -415,14 +415,14 @@
         <% if signed_in? %>
           <div class="field">
             <div class="control">
-              <textarea class="textarea" rows="3" placeholder="Write a comment..."></textarea>
+              <textarea class="textarea" rows="3" placeholder="Write a comment..." data-behavior="comment-write"></textarea>
             </div>
           </div>
           <div class="field">
             <div class="control">
               <div class="is-pulled-right">
                 <span id="comment-length" data-behavior="comment-length"><%= fa_icon "plus-square-o", text: "280" %></span>
-                <button class="button is-link" disabled>
+                <button class="button is-link" data-behavior="comment-post" disabled>
                   <span class="icon is-small">
                     <%= fa_icon("pencil") %>
                   </span>

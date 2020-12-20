@@ -267,7 +267,10 @@ body {
 }
 
 #comment-length {
-  color: $color-grey-dark;
   font-weight: lighter;
   margin-right: 0.5rem;
+}
+
+.comment-error {
+  color: $color-red;
 }
