@@ -8,10 +8,16 @@
         <% if signed_in? %>
           <div class="is-pulled-right mt-3">
             <%= link_to artist_path, class: "button is-danger", method: :delete, data: {confirm: "Are you sure you want to remove Album?"} do %>
-              <%= fa_icon "remove" %>&nbsp;Remove
+              <span class="icon">
+                <%= fa_icon "remove" %>
+              </span>
+              <span>Remove</span>
             <% end %>
             <%= link_to new_artist_path, class: "button is-link" do %>
-              <%= fa_icon "edit" %>&nbsp;Edit
+              <span class="icon">
+                <%= fa_icon "edit" %>
+              </span>
+              <span>Edit</span>
             <% end %>
           </div>
         <% end %>
@@ -34,7 +40,10 @@
         <% if signed_in? %>
           <div class="is-pulled-right mt-3">
             <%= link_to new_album_path, class: "button is-link is-light" do %>
-              <%= fa_icon "plus" %>&nbsp;Album
+              <span class="icon is-small">
+                <%= fa_icon "plus" %>
+              </span>
+              <span>Album</span>
             <% end %>
           </div>
         <% end %>
@@ -424,7 +433,7 @@
                 <span id="comment-length" data-behavior="comment-length"><%= fa_icon "plus-square-o", text: "280" %></span>
                 <button class="button is-link" data-behavior="comment-post" disabled>
                   <span class="icon is-small">
-                    <%= fa_icon("pencil") %>
+                    <%= fa_icon "pencil" %>
                   </span>
                   <span>Post it</span>
                 </button>

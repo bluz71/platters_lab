@@ -22,34 +22,34 @@
         <a class="navbar-link">
           <div class="has-text-weight-semibold">
             <span class="icon">
-              <%= fa_icon("user") %>
+              <%= fa_icon "user" %>
             </span>
-            user
+            <span>user</span>
           </div>
         </a>
         <div class="navbar-dropdown is-right">
           <%= link_to comments_path, class: "navbar-item" do %>
             <div>
               <span class="icon">
-                <%= fa_icon("comment-o") %>
+                <%= fa_icon "comment-o" %>
               </span>
-              Comments
+              <span>Comments</span>
             </div>
           <% end %>
           <a class="navbar-item">
             <div>
               <span class="icon">
-                <%= fa_icon("gear") %>
+                <%= fa_icon "gear" %>
               </span>
-              Account
+              <span>Account</span>
             </div>
           </a>
           <%= link_to log_out_path, class: "navbar-item" do %>
             <div>
               <span class="icon">
-                <%= fa_icon("sign-out") %>
+                <%= fa_icon "sign-out" %>
               </span>
-              Logout
+              <span>Logout</span>
             </div>
           <% end %>
         </div>
