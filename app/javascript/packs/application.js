@@ -3,6 +3,7 @@ import ArtistsSelect from '../src/ArtistsSelect'
 import AlbumsSelect from '../src/AlbumsSelect'
 import UserForm from '../src/UserForm'
 import CommentInteraction from '../src/CommentInteraction'
+import ArtistAlbumsSwitcher from '../src/ArtistAlbumsSwitcher'
 
 // Load stylesheets.
 import '../stylesheets/application'
@@ -23,6 +24,7 @@ $(() => {
   new AlbumsSelect()
   new UserForm()
   new CommentInteraction()
+  new ArtistAlbumsSwitcher()
   /* eslint-enable no-new */
 })
 
