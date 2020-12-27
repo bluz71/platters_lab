@@ -26,8 +26,10 @@ class ArtistAlbumsSwitcher {
     )
   }
 
-  tabsClick() {
-    $(this).siblings().removeClass('is-active')
+  tabsClick () {
+    $(this)
+      .siblings()
+      .removeClass('is-active')
     $(this).addClass('is-active')
   }
 }
