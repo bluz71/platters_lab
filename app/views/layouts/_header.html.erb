@@ -36,14 +36,14 @@
               <span>Comments</span>
             </div>
           <% end %>
-          <a class="navbar-item">
+          <%= link_to account_path, class: "navbar-item" do %>
             <div>
               <span class="icon">
                 <%= fa_icon "gear" %>
               </span>
               <span>Account</span>
             </div>
-          </a>
+          <% end %>
           <%= link_to log_out_path, class: "navbar-item" do %>
             <div>
               <span class="icon">

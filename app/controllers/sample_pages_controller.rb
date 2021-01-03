@@ -43,4 +43,7 @@ class SamplePagesController < ApplicationController
 
   def new_album
   end
+
+  def account
+  end
 end

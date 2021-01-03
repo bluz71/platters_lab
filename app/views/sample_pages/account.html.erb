@@ -1,0 +1,123 @@
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <h1 class="title">Account</h1>
+        <h2 class="subtitle mb-0">admin@example.com</h2>
+        <div class="divider"></div>
+
+        <div class="box has-background-white-bis">
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Name</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text", value="admin">
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Password</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="password">
+                </p>
+                <p class="help">
+                  You must enter a password even if you are only changing your
+                  account name
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label">
+              <!-- Left empty for spacing -->
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <button class="button is-link">
+                    <span class="icon">
+                      <%= fa_icon "edit" %>
+                    </span>
+                    <span>Update</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <h1 class="title mb-0">Avatar</h1>
+        <div class="divider"></div>
+
+        <div class="box has-background-white-bis">
+          <div class="content">
+            <p>
+              Set a custom avatar for Platters by registering at Gravatar with
+              your email address.
+            </p>
+
+            <p>
+              Gravatar is a global free avatar service used by many applications
+              including: Wordpress, Github and Stackoverflow. Click on the avatar
+              below to be taken to Gravatar.
+            </p>
+          </div>
+
+          <figure class="image is-128x128 mt-2 mb-2 has-image-outline">
+            <%= link_to album_path do %>
+              <%= image_tag "https://gravatar.com/avatar/699b7e1dd13a6638d847f2d7acf94843?s=160&r=pg&d=identicon"%>
+            <% end %>
+          </figure>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <h1 class="title mb-0">Delete account</h1>
+        <div class="divider"></div>
+
+        <div class="box has-background-white-bis">
+          <div class="content">
+            <p>
+              Once you delete your account all your comments will also be
+              deleted, there is no going back. Please be certain!
+            </p>
+          </div>
+          <button class="button is-danger">
+            <span class="icon">
+              <%= fa_icon "remove" %>
+            </span>
+            <span>Delete account</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

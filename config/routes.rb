@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get "sign_up" => "sample_pages#sign_up"
   get "new_artist" => "sample_pages#new_artist"
   get "new_album" => "sample_pages#new_album"
+  get "account" => "sample_pages#account"
 end

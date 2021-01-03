@@ -97,6 +97,7 @@ $color-red:          #f04124;
 
 .has-image-outline {
   border: 1px solid $color-grey-mid;
+  border-radius: 4px;
 
   &:hover {
     border: 1px solid $color-blue;
@@ -169,7 +170,6 @@ body {
     img {
       height: 400px;
       width: 400px;
-      border-radius: 4px;
       @extend .has-image-outline;
     }
   }
@@ -226,7 +226,6 @@ body {
 
     .media-left {
       img {
-        border-radius: 4px;
         @extend .has-image-outline;
       }
     }
