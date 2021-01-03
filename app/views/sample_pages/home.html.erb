@@ -426,9 +426,9 @@
             </span>
             <% if signed_in? %>
               <div class="is-pulled-right">
-                <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
-                  <span class="icon is-small">
-                    <%= fa_icon "trash-o" %>
+                <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to delete this comment?"} do %>
+                  <span class="icon is-small has-text-danger">
+                    <%= fa_icon "remove" %>
                   </span>
                 <% end %>
               </div>
