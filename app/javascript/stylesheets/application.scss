@@ -273,3 +273,14 @@ body {
 .comment-error {
   color: $color-red;
 }
+
+#album {
+  .cover {
+    img {
+      max-height: 350px;
+      max-width: 350px;
+      border: 1px solid $color-grey-mid;
+      border-radius: 4px;
+    }
+  }
+}

@@ -1,6 +1,512 @@
-<section class="section">
+<section id="album" class="section">
   <div class="container">
-    <h1 class="title">Album</h1>
-    <div class="divider"></div>
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <h1 class="title">Sing Street Soundtrack</h1>
+        <h2 class="subtitle mb-0">
+          by
+          <span class="has-link-custom-colors">
+            <%= link_to "Various", artist_path %>
+          </span>
+        </h2>
+        <div class="divider"></div>
+
+        <div class="columns is-desktop">
+          <div class="column is-two-fifths-desktop has-text-centered cover">
+            <figure class="image is-inline-block">
+              <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/1162/Various--Sing_Street_Soundtrack.jpg">
+            </figure>
+          </div>
+          <div class="column is-three-fifths-desktop">
+            <div class="is-size-4">
+              17 Tracks
+              <span class="is-size-6 has-text-grey">(Time 51:08)</span>
+            </div>
+            <div class="has-text-weight-light is-size-mid-6-7 mt-3">
+              <%= link_to albums_path, class: "is-link-custom" do %>
+                <%= fa_icon "calendar", text: "2016" %>
+              <% end %>
+              <%= link_to albums_path, class: "is-link-custom" do %>
+                <%= fa_icon "tag", text: "Rock", class: "ml-2" %>
+              <% end %>
+            </div>
+
+            <table class="table is-striped is-fullwidth mt-3 is-size-mid-6-7">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Title</th>
+                  <th>Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="visible">
+                  <td>1.</td>
+                  <td>Sing Street - Rock N&#39; Roll Is A Risk</td>
+                  <td>0:05</td>
+                </tr>
+                <tr class="visible">
+                  <td>2.</td>
+                  <td>Motorhead - Stay Clean</td>
+                  <td>2:39</td>
+                </tr>
+                <tr class="visible">
+                  <td>3.</td>
+                  <td>Sing Street - The Riddle Of The Model</td>
+                  <td>1:48</td>
+                </tr>
+                <tr class="visible">
+                  <td>4.</td>
+                  <td>Duran Duran - Rio</td>
+                  <td>5:29</td>
+                </tr>
+                <tr class="visible">
+                  <td>5.</td>
+                  <td>Sing Street - Up</td>
+                  <td>2:43</td>
+                </tr>
+                <tr class="visible">
+                  <td>6.</td>
+                  <td>Sing Street - To Find You</td>
+                  <td>3:20</td>
+                </tr>
+                <tr class="visible">
+                  <td>7.</td>
+                  <td>The Jam - Town Called Malice</td>
+                  <td>2:53</td>
+                </tr>
+                <tr class="visible">
+                  <td>8.</td>
+                  <td>The Cure - In Between Days</td>
+                  <td>2:56</td>
+                </tr>
+                <tr class="visible">
+                  <td>9.</td>
+                  <td>Sing Street - A Beautiful Sea</td>
+                  <td>3:03</td>
+                </tr>
+                <tr class="visible">
+                  <td>10.</td>
+                  <td>Hall &amp; Oates - Maneater</td>
+                  <td>4:31</td>
+                </tr>
+                <tr class="visible">
+                  <td>11.</td>
+                  <td>Joe Jackson - Steppin&#39; Out</td>
+                  <td>4:16</td>
+                </tr>
+                <tr class="visible">
+                  <td>12.</td>
+                  <td>Sing Street - Drive It Like You Stole It</td>
+                  <td>3:36</td>
+                </tr>
+                <tr class="visible">
+                  <td>13.</td>
+                  <td>Sing Street - Up (Bedroom Mix)</td>
+                  <td>1:53</td>
+                </tr>
+                <tr class="visible">
+                  <td>14.</td>
+                  <td>M - Pop Muzik</td>
+                  <td>3:16</td>
+                </tr>
+                <tr class="visible">
+                  <td>15.</td>
+                  <td>Sing Street - Girls</td>
+                  <td>1:57</td>
+                </tr>
+                <tr class="visible">
+                  <td>16.</td>
+                  <td>Sing Street - Brown Shoes</td>
+                  <td>2:51</td>
+                </tr>
+                <tr class="visible">
+                  <td>17.</td>
+                  <td>Adam Levine - Go Now</td>
+                  <td>3:52</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2 class="title is-size-4">Comments</h2>
+        <h3 class="subtitle is-size-6 mb-0">(30 Comments)</h3>
+        <div class="divider"></div>
+        <% if signed_in? %>
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" rows="3" placeholder="Write a comment..." data-behavior="comment-write"></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <div class="is-pulled-right">
+                <span id="comment-length" data-behavior="comment-length"><%= fa_icon "plus-square-o", text: "280" %></span>
+                <button class="button is-link" data-behavior="comment-post" disabled>
+                  <span class="icon is-small">
+                    <%= fa_icon "pencil" %>
+                  </span>
+                  <span>Post it</span>
+                </button>
+              </div>
+              <div class="is-clearfix"></div>
+            </div>
+          </div>
+        <% end %>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/e3a798fb9b839b3c688e44bdf3a6a423?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "iliana77", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                yesterday at 2:53pm
+              </div>
+              <div class="content">
+                <p>
+                  Twee pour-over cold-pressed photo booth fingerstache beard raw denim. Ramps chillwave yr xoxo seitan microdosing chambray. Letterpress fashion axe loko ennui sustainable stumptown slow-carb.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "nella_schmeler94", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                yesterday at 2:53pm
+              </div>
+              <div class="content">
+                <p>
+                  3 wolf moon banjo fap pinterest fashion axe deep v. Poutine pop-up +1 wolf heirloom. Artisan tacos hoodie.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "ewell39", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                on July 30
+              </div>
+              <div class="content">
+                <p>
+                  Quinoa crucifix vhs deep v. Put a bird on it polaroid small batch letterpress keffiyeh asymmetrical. Swag yolo readymade meh echo single-origin coffee. Truffaut mumblecore kogi echo fap.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/ebfb6ad212e8a4aa457fdbaabf1f28b2?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "liza10", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Skateboard neutra narwhal hoodie plaid photo booth cleanse. Viral dreamcatcher intelligentsia knausgaard hammock. Kogi +1 skateboard park. Seitan slow-carb bespoke post-ironic yr cold-pressed. Blog selfies everyday chartreuse kogi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/c0ad110a5a1fbec8378cd34274b6c59f?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "kirsten34", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Taxidermy pbr&b knausgaard pabst meh selvage. Wes anderson goth banjo. Hoodie photo booth pitchfork. Pitchfork pinterest blue bottle farm-to-table meggings. Pbr&b you probably haven't heard of them viral hashtag hammock kombucha.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "ewell39", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Microdosing park echo. Aesthetic lumbersexual gentrify celiac mumblecore franzen poutine occupy. Beard 3 wolf moon deep v park. Blog salvia tacos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/c07a68329aff564e29916390f1025c8b?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "nella_schmeler94", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Gastropub iphone beard shabby chic tofu artisan. Chillwave offal fingerstache hammock. Kickstarter shabby chic vegan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/f47856a042b5836c64922b387567ce21?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "ewell39", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Organic squid sartorial letterpress fanny pack health dreamcatcher five dollar toast. Small batch cleanse lumbersexual. Post-ironic bespoke sriracha. Humblebrag park next level biodiesel fanny pack tousled kombucha.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/702376ea382866afea31a0931ca3e21f?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "filomena_cummings67", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Seitan salvia sartorial listicle next level messenger bag. Roof vice cold-pressed salvia semiotics. Organic cray portland intelligentsia craft beer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box has-background-white-ter">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <%= link_to album_path do %>
+                  <img class="is-rounded has-image-outline" src="https://gravatar.com/avatar/a3fac396421b05f2e3777d0427a1b100?s=80&r=pg&d=identicon">
+                <% end %>
+              </figure>
+            </div>
+            <div class="media-content">
+              <span class="is-size-5">
+                <%= link_to "hayley63", comments_path %>
+              </span>
+              <% if signed_in? %>
+                <div class="is-pulled-right">
+                  <%= link_to albums_path, class: "is-link-custom", method: :delete, data: {confirm: "Are you sure you want to this comment?"} do %>
+                    <span class="icon is-small">
+                      <%= fa_icon "trash-o" %>
+                    </span>
+                  <% end %>
+                </div>
+                <div class="is-clearfix"></div>
+              <% end %>
+              <div class="is-size-7 mt-1 mb-2">
+                on Jul 25
+              </div>
+              <div class="content">
+                <p>
+                  Taxidermy asymmetrical roof quinoa williamsburg. Keytar ugh echo flexitarian $@!#%. Taxidermy knausgaard kickstarter cleanse. Sartorial fixie chambray. Shoreditch helvetica goth cray chia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </div>
 </section>
