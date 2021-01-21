@@ -2,13 +2,32 @@
   <div class="container">
     <div class="columns">
       <div class="column is-10 is-offset-1">
-        <h1 class="title">Sing Street Soundtrack</h1>
-        <h2 class="subtitle mb-0">
-          by
-          <span class="has-link-custom-colors">
-            <%= link_to "Various", artist_path %>
-          </span>
-        </h2>
+        <div class="is-pulled-left">
+          <h1 class="title">Sing Street Soundtrack</h1>
+          <h2 class="subtitle mb-0">
+            by
+            <span class="has-link-custom-colors">
+              <%= link_to "Various", artist_path %>
+            </span>
+          </h2>
+        </div>
+        <% if signed_in? %>
+          <div class="is-pulled-right mt-5">
+            <%= link_to artist_path, class: "button is-danger", method: :delete, data: {confirm: "Are you sure you want to remove Album?"} do %>
+              <span class="icon">
+                <%= fa_icon "remove" %>
+              </span>
+              <span>Remove</span>
+            <% end %>
+            <%= link_to new_album_path, class: "button is-link" do %>
+              <span class="icon">
+                <%= fa_icon "edit" %>
+              </span>
+              <span>Edit</span>
+            <% end %>
+          </div>
+        <% end %>
+        <div class="is-clearfix"></div>
         <div class="divider"></div>
 
         <div class="columns is-desktop">
