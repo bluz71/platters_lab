@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "albums" => "sample_pages#albums"
   get "album" => "sample_pages#album"
   get "artist" => "sample_pages#artist"
+  get "long_album" => "sample_pages#long_album"
   get "comments" => "sample_pages#comments"
   get "sign_up" => "sample_pages#sign_up"
   get "new_artist" => "sample_pages#new_artist"
