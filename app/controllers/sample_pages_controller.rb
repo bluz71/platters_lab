@@ -28,6 +28,9 @@ class SamplePagesController < ApplicationController
   def album
   end
 
+  def long_album
+  end
+
   def artist
   end
 
