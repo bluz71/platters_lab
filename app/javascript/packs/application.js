@@ -4,6 +4,7 @@ import AlbumsSelect from '../src/AlbumsSelect'
 import UserForm from '../src/UserForm'
 import CommentInteraction from '../src/CommentInteraction'
 import ArtistAlbumsSwitcher from '../src/ArtistAlbumsSwitcher'
+import TracksVisibility from '../src/TracksVisibility'
 
 // Load stylesheets.
 import '../stylesheets/application'
@@ -25,6 +26,7 @@ $(() => {
   new UserForm()
   new CommentInteraction()
   new ArtistAlbumsSwitcher()
+  new TracksVisibility()
   /* eslint-enable no-new */
 })
 
