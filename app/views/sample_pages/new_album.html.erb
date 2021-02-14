@@ -74,7 +74,7 @@
             </div>
             <div class="field-body">
               <div class="field">
-                <button class="button is-link is-light">
+                <button class="button is-link is-light" data-behavior="genre-modal-launch-target">
                   <span class="icon">
                     <%= fa_icon "plus" %>
                   </span>
@@ -159,3 +159,20 @@
     </div>
   </div>
 </section>
+
+<div class="modal" data-behavior="genre-modal-target">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">New Genre</p>
+      <button class="delete" data-behavior="genre-model-close-target"></button>
+    </header>
+    <section class="modal-card-body">
+      <input class="input" type="text", placeholder="Genre">
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-link">Add</button>
+      <button class="button" data-behavior="genre-model-cancel-target">Cancel</button>
+    </footer>
+  </div>
+</div>
