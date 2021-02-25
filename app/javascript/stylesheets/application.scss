@@ -174,8 +174,7 @@ body {
     @extend .has-link-custom-colors;
 
     img {
-      height: 400px;
-      width: 400px;
+      max-width: 400px;
       @extend .has-image-outline;
     }
   }
