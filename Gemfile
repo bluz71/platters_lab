@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-ruby "2.7.2"
+ruby "2.7.3"
 
-gem "rails", "~> 6.0", ">= 6.0.3.3"
+gem "rails", "~> 6.0", ">= 6.0.4"
 gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 gem "sass-rails", ">= 6"
