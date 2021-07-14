@@ -2,47 +2,51 @@
 // Bulma customizations.
 // ===================================================================
 
-$section-padding: 2rem 1.5rem;
-$footer-padding: 1rem;
-$navbar-height: 3.75rem;
+$body-background-color: #fdfdfd;
 $control-radius: 3px;
-$input-radius: 3px;
-$title-color: #333;
-$label-color: #333;
-$notification-radius: 3px;
 $divider-margin-inner-size: 0px;
 $divider-margin-size: 0.5rem 0 25px;
-$tag-radius: 4px;
-$modal-card-head-radius: 4px;
+$footer-padding: 1rem;
+$input-radius: 3px;
+$label-color: #333;
 $modal-card-foot-radius: 4px;
+$modal-card-head-radius: 4px;
+$navbar-height: 3.75rem;
+$notification-radius: 3px;
+$section-padding: 2rem 1.5rem;
+$tag-radius: 4px;
+$title-color: #333;
 
 // ===================================================================
 // Imports.
 // ===================================================================
 
 @import '~bulmaswatch/yeti/_variables';
+// Yeti _variables overrides.
+$border:            #e5e5e5;
+$body-size:         16px;
+$grey-darker:       #333;
+$grey-dark:         #4a4a4a;
+$family-sans-serif: "Source Sans Pro", sans-serif;
+$box-shadow:        0 0.5em 1em -0.125em $grey-lighter, 0 0 0 1px $grey-lighter;
+$panel-shadow:      0 0.5em 1em -0.125em $grey-lighter, 0 0 0 1px $grey-lighter;
 @import '~bulma';
 @import '~bulmaswatch/yeti/_overrides';
 $fa-font-path: "~font-awesome/fonts/";
-@import "~font-awesome/scss/font-awesome";
-@import "@creativebulma/bulma-divider";
-@import "@creativebulma/bulma-tooltip";
-@import url("https://fonts.googleapis.com/css?family=Capriola");
-
-// Yeti colors.
-$color-grey-dark:    #333;
-$color-grey-mid:     #ddd;
-$color-grey-light:   #eee;
-$color-grey-lighter: #f5f5f5;
-$color-blue:         #3273dc;
-$color-red:          #f04124;
+@import '~font-awesome/scss/font-awesome';
+@import '@creativebulma/bulma-divider';
+@import '@creativebulma/bulma-tooltip';
+@import url('https://fonts.googleapis.com/css?family=Capriola');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap');
 
 // ===================================================================
 // Yeti customizations.
 // ===================================================================
 
-.box {
-  box-shadow: 0 0.5em 1em -0.125em $color-grey-light, 0 0 0 1px $color-grey-light;
+$grey-lightest: #f5f5f5;
+
+.is-size-7 {
+  font-size: 0.85rem !important;
 }
 
 .notification {
@@ -55,11 +59,11 @@ $color-red:          #f04124;
 }
 
 .button.is-light {
-  border-color: $color-grey-mid;
+  border-color: $grey-light;
 }
 
 .button.is-light:focus {
-  border-color: $color-grey-mid;
+  border-color: $grey-light;
 }
 
 // ===================================================================
@@ -79,34 +83,26 @@ $color-red:          #f04124;
   padding: 0px !important;
 }
 
-.is-size-mid-6-7 {
-  font-size: 0.85rem;
-}
-
 .is-link-custom {
-  color: $color-grey-dark;
+  color: $grey-darker;
 
   &:hover {
-    color: $color-blue;
+    color: $blue;
   }
 }
 
 .has-link-custom-colors {
   a {
-    color: $color-grey-dark;
-
-    &:hover {
-      color: $color-blue;
-    }
+    @extend .is-link-custom
   }
 }
 
 .has-image-outline {
-  border: 1px solid $color-grey-mid;
+  border: 1px solid $grey-light;
   border-radius: 4px;
 
   &:hover {
-    border: 1px solid $color-blue;
+    border: 1px solid $blue;
   }
 }
 
@@ -128,7 +124,7 @@ body {
 }
 
 #layout-footer {
-  border-top: 1px solid $color-grey-light;
+  border-top: 1px solid $grey-lighter;
 
   ul {
     li {
@@ -186,11 +182,11 @@ body {
     @extend .py-0;
 
     a {
-      color: $color-grey-dark;
+      color: $grey-dark;
     }
 
     &:hover {
-      background-color: $color-grey-lighter;
+      background-color: $grey-lightest;
     }
   }
 }
@@ -204,7 +200,7 @@ body {
 
       img {
         border-radius: 3px;
-        border: 1px solid $color-grey-mid;
+        border: 1px solid $grey-light;
       }
     }
 
@@ -212,7 +208,7 @@ body {
       min-width: 0;
 
       img {
-        border: 1px solid $color-grey-mid;
+        border: 1px solid $grey-light;
       }
     }
   }
@@ -276,7 +272,7 @@ body {
 }
 
 .comment-error {
-  color: $color-red;
+  color: $red;
 }
 
 #album {
@@ -284,7 +280,7 @@ body {
     img {
       max-height: 350px;
       max-width: 350px;
-      border: 1px solid $color-grey-mid;
+      border: 1px solid $grey-light;
       border-radius: 4px;
     }
   }
