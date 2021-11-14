@@ -1,4 +1,4 @@
-import Turbolinks from 'turbolinks'
+import Turbo from '@hotwired/turbo-rails'
 
 class LayoutInteraction {
   constructor () {
@@ -14,9 +14,7 @@ class LayoutInteraction {
   }
 
   layoutLogInClick (event) {
-    console.log(Turbolinks.controller.cache)
-    Turbolinks.clearCache()
-    console.log(Turbolinks.controller.cache)
+    Turbo.clearCache()
   }
 }
 
