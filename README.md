@@ -1,24 +1,16 @@
-# README
+README
+======
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A laboratory for the Platters application.
 
-Things you may want to cover:
+Technologies of Interest:
 
-* Ruby version
+* [Ruby on Rails](https://rubyonrails.org)
 
-* System dependencies
+* [Ruby 3.1](https://www.ruby-lang.org/en)
 
-* Configuration
+* [Bulma](https://bulma.io)
 
-* Database creation
+* [Alpine.js](https://alpinejs.dev)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Turbo](https://turbo.hotwired.dev)
