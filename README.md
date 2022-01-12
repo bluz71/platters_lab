@@ -13,4 +13,14 @@ Technologies of Interest:
 
 * [Alpine.js](https://alpinejs.dev)
 
-* [Turbo](https://turbo.hotwired.dev)
+* [Turbo Drive](https://turbo.hotwired.dev/handbook/drive)
+
+* [Mrujs](https://mrujs.com)
+
+* [jsbundling-rails](https://github.com/rails/jsbundling-rails)
+
+* [cssbundling-rails](https://github.com/rails/cssbundling-rails)
+
+* [Vite Ruby](https://vite-ruby.netlify.app)
+
+* [vite-plugin-full-reload](https://github.com/ElMassimo/vite-plugin-full-reload)
