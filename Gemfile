@@ -2,9 +2,9 @@ source "https://rubygems.org"
 
 ruby "2.7.3"
 
-gem "rails", "~> 6.1", ">= 6.1.4.1"
+gem "rails", "~> 6.1", ">= 6.1.4.6"
 gem "sqlite3", "~> 1.4"
-gem "puma", "~> 5.5", ">= 5.5.2"
+gem "puma", "~> 5.6", ">= 5.6.2"
 gem "sass-rails", ">= 6"
 gem "webpacker", "~> 5.4", ">= 5.4.3"
 gem "jbuilder", "~> 2.7"
