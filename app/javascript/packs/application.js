@@ -10,9 +10,6 @@ import GenreModal from '../src/GenreModal'
 // Third-party packages.
 import '@hotwired/turbo-rails'
 
-// Load stylesheets.
-import '../stylesheets/application'
-
 // Third-party packages.
 require('jquery')
 require('@rails/ujs').start()

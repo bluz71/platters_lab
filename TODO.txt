@@ -1,0 +1,10 @@
+https://kmitov.com/posts/tag/cssbundling-rails/
+https://jasonfleetwoodboldt.com/courses/stepping-up-rails/rails-7-new-app-with-js-bundling-css-bundling/
+
+Start using /bin/dev to start development servers
+
+- Migrate webpacker to jsbundling:
+    https://github.com/rails/jsbundling-rails/blob/main/docs/switch_from_webpacker.md
+
+- Get Live Reload working
+    https://www.colby.so/posts/live-reloading-with-esbuild-and-rails

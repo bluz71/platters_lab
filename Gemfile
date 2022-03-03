@@ -7,6 +7,7 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.6", ">= 5.6.2"
 gem "sass-rails", ">= 6"
 gem "webpacker", "~> 5.4", ">= 5.4.3"
+gem "cssbundling-rails", "~> 1.1"
 gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"

@@ -37,3 +37,6 @@ yarn-debug.log*
 
 # Custom ignore rules.
 Session.vim
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

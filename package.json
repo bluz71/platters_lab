@@ -13,12 +13,17 @@
     "bulma": "^0.9.3",
     "bulmaswatch": "^0.8.1",
     "font-awesome": "4.7.0",
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.0",
+    "sass": "^1.49.9"
   },
   "version": "0.1.0",
   "devDependencies": {
     "expose-loader": "^0.7.5",
     "webpack-dev-server": "^3.10.3"
+  },
+  "scripts": {
+    "__build__": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
+    "build:css": "sass ./app/assets/stylesheets/application.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   },
   "standard": {
     "globals": [
