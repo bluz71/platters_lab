@@ -14,9 +14,6 @@ import '@hotwired/turbo-rails'
 require('jquery')
 require('@rails/ujs').start()
 
-// Load images.
-require.context('../images', true, /\.(?:png|jpg|gif|ico|svg)$/)
-
 // Event handlers to run once the DOM is ready.
 $(() => {
   /* eslint-disable no-new */
