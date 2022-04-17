@@ -1,17 +1,20 @@
-import BulmaInteraction from '../src/BulmaInteraction'
-import ArtistsSelect from '../src/ArtistsSelect'
-import AlbumsSelect from '../src/AlbumsSelect'
-import UserForm from '../src/UserForm'
-import CommentInteraction from '../src/CommentInteraction'
-import ArtistAlbumsSwitcher from '../src/ArtistAlbumsSwitcher'
-import TracksVisibility from '../src/TracksVisibility'
-import GenreModal from '../src/GenreModal'
+import BulmaInteraction from './src/BulmaInteraction'
+import ArtistsSelect from './src/ArtistsSelect'
+import AlbumsSelect from './src/AlbumsSelect'
+import UserForm from './src/UserForm'
+import CommentInteraction from './src/CommentInteraction'
+import ArtistAlbumsSwitcher from './src/ArtistAlbumsSwitcher'
+import TracksVisibility from './src/TracksVisibility'
+import GenreModal from './src/GenreModal'
 
 // Third-party packages.
 import '@hotwired/turbo-rails'
 
+// jQuery import and global exposure.
+const jQuery = require('jquery')
+window.$ = window.jQuery = jQuery
+
 // Third-party packages.
-require('jquery')
 require('@rails/ujs').start()
 
 // Event handlers to run once the DOM is ready.

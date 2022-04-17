@@ -1,6 +1,9 @@
 class BulmaInteraction {
   constructor () {
     this.setEventHandlers()
+
+    // Bind 'this' for callback functions.
+    this.keyPress = this.keyPress.bind(this)
   }
 
   setEventHandlers () {
@@ -38,7 +41,7 @@ class BulmaInteraction {
     $('[data-behavior~=navbar-dropdown-target]').removeClass('is-active')
   }
 
-  keyPress = event => {
+  keyPress (event) {
     // Close menus when the escape key is pressed.
     if (event.which === 27) {
       $('[data-behavior~=navbar-dropdown-target]').removeClass('is-active')

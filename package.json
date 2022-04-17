@@ -2,27 +2,22 @@
   "name": "platters_lab",
   "private": true,
   "dependencies": {
-    "@babel/eslint-parser": "^7.14.3",
     "@creativebulma/bulma-divider": "^1.1.0",
     "@creativebulma/bulma-tooltip": "1.2.0",
     "@hotwired/turbo-rails": "^7.1.0",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "5.4.3",
     "bulma": "^0.9.3",
     "bulmaswatch": "^0.8.1",
+    "esbuild": "^0.14.29",
     "font-awesome": "4.7.0",
     "jquery": "^3.5.0",
     "sass": "^1.49.9"
   },
   "version": "0.1.0",
-  "devDependencies": {
-    "expose-loader": "^0.7.5",
-    "webpack-dev-server": "^3.10.3"
-  },
   "scripts": {
-    "__build__": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
+    "build": "./node_modules/.bin/esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
     "build:css": "sass ./app/assets/stylesheets/application.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   },
   "standard": {
@@ -31,7 +26,6 @@
     ],
     "ignore": [
       "babel.config.js"
-    ],
-    "parser": "@babel/eslint-parser"
+    ]
   }
 }

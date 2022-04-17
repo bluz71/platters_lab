@@ -2,6 +2,9 @@ class TracksVisibility {
   constructor () {
     this.setEventHandlers()
     this.showingAllTracks = false
+
+    // Bind 'this' for callback functions.
+    this.visibilityClick = this.visibilityClick.bind(this)
   }
 
   setEventHandlers () {
@@ -12,7 +15,7 @@ class TracksVisibility {
     )
   }
 
-  visibilityClick = event => {
+  visibilityClick (event) {
     this.showingAllTracks = !this.showingAllTracks
     $('[data-behavior~=tracks-gradient-target]').toggle()
     $('[data-behavior~=track-visibility-target]').toggleClass('is-hidden')

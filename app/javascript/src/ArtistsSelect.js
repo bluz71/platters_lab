@@ -1,6 +1,10 @@
 class ArtistsSelect {
   constructor () {
     this.setEventHandlers()
+
+    // Bind 'this' for callback functions.
+    this.searchClick = this.searchClick.bind(this)
+    this.searchFocus = this.searchFocus.bind(this)
   }
 
   setEventHandlers () {
@@ -11,14 +15,14 @@ class ArtistsSelect {
     )
   }
 
-  searchClick = event => {
+  searchClick (event) {
     $('[data-behavior~=artist-search-form-target]').slideToggle(
       250,
       this.searchFocus
     )
   }
 
-  searchFocus = () => {
+  searchFocus () {
     $('[data-behavior~=artist-search-field-target]').focus()
   }
 }
