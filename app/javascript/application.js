@@ -10,6 +10,12 @@ import GenreModal from './src/GenreModal'
 // Third-party packages.
 import '@hotwired/turbo-rails'
 
+// Alpine.js import and global exposure.
+import Alpine from 'alpinejs'
+
+window.Alpine = Alpine
+Alpine.start()
+
 // jQuery import and global exposure.
 const jQuery = require('jquery')
 window.$ = window.jQuery = jQuery
