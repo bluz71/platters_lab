@@ -3,7 +3,6 @@ import ArtistsSelect from './src/ArtistsSelect'
 import AlbumsSelect from './src/AlbumsSelect'
 import UserForm from './src/UserForm'
 import CommentInteraction from './src/CommentInteraction'
-import ArtistAlbumsSwitcher from './src/ArtistAlbumsSwitcher'
 import TracksVisibility from './src/TracksVisibility'
 import GenreModal from './src/GenreModal'
 
@@ -31,7 +30,6 @@ $(() => {
   new AlbumsSelect()
   new UserForm()
   new CommentInteraction()
-  new ArtistAlbumsSwitcher()
   new TracksVisibility()
   new GenreModal()
   /* eslint-enable no-new */

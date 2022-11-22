@@ -49,12 +49,12 @@
         <% end %>
         <div class="is-clearfix"></div>
 
-        <div class="tabs is-centered">
+        <div class="tabs is-centered" x-data="{ tab: 'newest' }">
           <ul>
-            <li class="is-active" data-behavior="artist-albums-newest-target"><a>Newest</a></li>
-            <li data-behavior="artist-albums-oldest-target"><a>Oldest</a></li>
-            <li data-behavior="artist-albums-longest-target"><a>Longest</a></li>
-            <li data-behavior="artist-albums-name-target"><a>Name</a></li>
+            <li :class="{ 'is-active': tab === 'newest' }" @click="tab = 'newest'"><a>Newest</a></li>
+            <li :class="{ 'is-active': tab === 'oldest' }"  @click="tab = 'oldest'"><a>Oldest</a></li>
+            <li :class="{ 'is-active': tab === 'longest' }" @click="tab = 'longest'"><a>Longest</a></li>
+            <li :class="{ 'is-active': tab === 'name' }" @click="tab = 'name'"><a>Name</a></li>
           </ul>
         </div>
 
