@@ -12,12 +12,6 @@ class BulmaInteraction {
       '[data-behavior~=navbar-burger-target]',
       this.navbarBurgerClick
     )
-    $(document).on(
-      'click',
-      '[data-behavior~=navbar-dropdown-target]',
-      this.navbarDropdownClick
-    )
-    $(document).on('click', this.windowClick)
     $(document).on('keyup', this.keyPress)
     $(document).on(
       'click',
@@ -30,15 +24,6 @@ class BulmaInteraction {
     event.stopPropagation()
     $('.navbar-burger').toggleClass('is-active')
     $('.navbar-menu').toggleClass('is-active')
-  }
-
-  navbarDropdownClick (event) {
-    event.stopPropagation()
-    $(event.currentTarget).toggleClass('is-active')
-  }
-
-  windowClick (event) {
-    $('[data-behavior~=navbar-dropdown-target]').removeClass('is-active')
   }
 
   keyPress (event) {
