@@ -13,11 +13,6 @@ class BulmaInteraction {
       this.navbarBurgerClick
     )
     $(document).on('keyup', this.keyPress)
-    $(document).on(
-      'click',
-      '[data-behavior~=notification-delete-target]',
-      this.notificationDeleteClick
-    )
   }
 
   navbarBurgerClick (event) {
@@ -33,12 +28,6 @@ class BulmaInteraction {
       $('[data-behavior~=navbar-burger-target]').removeClass('is-active')
       $('[data-behavior~=navbar-menu-target]').removeClass('is-active')
     }
-  }
-
-  notificationDeleteClick (event) {
-    $(event.currentTarget)
-      .parent()
-      .remove()
   }
 }
 

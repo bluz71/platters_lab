@@ -13,12 +13,12 @@
   <body class="has-navbar-fixed-top">
     <%= render "layouts/header" %>
     <div id="flash-messages">
-      <% flash.each do |key, message| %>
-        <div class="notification is-<%= key == "alert" ? "danger" : "link" %>" data-behavior="alert-<%= key %>-target">
-          <button class="delete" data-behavior="notification-delete-target"></button>
-          <% if key == "alert" %>
+      <% flash.each do |message_type, message| %>
+        <div class="notification is-<%= message_type == "alert" ? "danger" : "link" %>" x-data="{ visible: true}" x-show="visible" x-transition.duration.500ms x-init="setTimeout(() => { visible = false }, 4500)">
+          <button class="delete" @click="visible = false"></button>
+          <% if message_type == "alert" %>
             <%= fa_icon "warning fw" %>
-          <% elsif key == "notice" || key == "success" %>
+          <% elsif message_type == "notice" || message_type == "success" %>
             <%= fa_icon "info-circle fw" %>
           <% end %>
           <%= message %>

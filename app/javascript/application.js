@@ -34,13 +34,3 @@ $(() => {
   new GenreModal()
   /* eslint-enable no-new */
 })
-
-// Event handlers to run once the DOM is ready and also on every page change.
-$(document).on('turbo:load', () => {
-  // Auto-hide, then remove, flash[:notice] messages.
-  $('[data-behavior~=alert-notice-target]')
-    .delay(4500)
-    .fadeOut(500, () => {
-      $(this).remove()
-    })
-})
