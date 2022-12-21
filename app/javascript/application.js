@@ -1,4 +1,3 @@
-import BulmaInteraction from './src/BulmaInteraction'
 import ArtistsSelect from './src/ArtistsSelect'
 import AlbumsSelect from './src/AlbumsSelect'
 import UserForm from './src/UserForm'
@@ -25,7 +24,6 @@ require('@rails/ujs').start()
 // Event handlers to run once the DOM is ready.
 $(() => {
   /* eslint-disable no-new */
-  new BulmaInteraction()
   new ArtistsSelect()
   new AlbumsSelect()
   new UserForm()

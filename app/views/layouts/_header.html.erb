@@ -1,24 +1,24 @@
-<nav class="navbar is-fixed-top is-dark">
+<nav class="navbar is-fixed-top is-dark" x-data="{ burgerOpen: false }">
   <div class="navbar-brand">
     <%= link_to root_path, class: "navbar-item has-text-weight-semibold" do %>
       <%= image_tag "platters-white.svg", height: "28", width: "36" %> platters
     <% end %>
 
-    <a role="button" class="navbar-burger burger" data-target="collapse" data-behavior="navbar-burger-target">
+    <a role="button" class="navbar-burger burger" data-target="collapse" :class="{ 'is-active': burgerOpen }" @click="burgerOpen = !burgerOpen" >
       <span></span>
       <span></span>
       <span></span>
     </a>
   </div>
 
-  <div id="collapse" class="navbar-menu" data-behavior="navbar-menu-target">
+  <div id="collapse" class="navbar-menu" :class="{ 'is-active': burgerOpen }" @keyup.escape.window="burgerOpen = false">
     <div class="navbar-start">
       <%= link_to "Artists", artists_path, class: "navbar-item has-text-weight-semibold" %>
       <%= link_to "Albums", albums_path, class: "navbar-item has-text-weight-semibold" %>
     </div>
-    <div class="navbar-end" x-data="{ open: false }">
+    <div class="navbar-end" x-data="{ dropdownOpen: false }">
     <% if signed_in? %>
-      <div class="navbar-item has-dropdown" :class="{ 'is-active': open }" @click="open = !open" @click.outside="open = false">
+      <div class="navbar-item has-dropdown" :class="{ 'is-active': dropdownOpen }" @click="dropdownOpen = !dropdownOpen" @click.outside="dropdownOpen = false" @keyup.escape.window="dropdownOpen = false">
         <a class="navbar-link">
           <div class="has-text-weight-semibold">
             <span class="icon">
