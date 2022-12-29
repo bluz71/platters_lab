@@ -1,5 +1,5 @@
 <section id="artists" class="section">
-  <div class="container">
+  <div class="container" x-data="{ searchOpen: false }">
     <div class="is-pulled-left">
       <h1 class="title">Artists</h1>
       <h2 class="subtitle">(582 Artists)</h2>
@@ -24,7 +24,7 @@
           <li><a class="pagination-link"><%= letter %></a></li>
         <% end %>
         <li>
-          <a class="pagination-link has-tooltip-arrow" data-behavior="artist-search-link-target" data-tooltip="Search">
+          <a class="pagination-link has-tooltip-arrow" data-tooltip="Search" @click="searchOpen = !searchOpen; $nextTick(() => $refs.searchInput.focus());">
             <%= fa_icon "search" %>
           </a>
         </li>

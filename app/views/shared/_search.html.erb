@@ -1,8 +1,8 @@
-<div class="columns" data-behavior=<%= "#{type}-search-form-target" %> style="display: none;">
+<div class="columns" x-show="searchOpen" x-collapse.duration.300ms>
   <div class="column is-8 is-offset-2">
     <div class="field has-addons">
       <div class="control is-expanded">
-        <input class="input" type="text" placeholder="<%= "Search #{type}s..." %>" data-behavior=<%= "#{type}-search-field-target" %> >
+        <input class="input" type="text" placeholder="<%= "Search #{type}s..." %>" x-ref="searchInput">
       </div>
       <div class="control">
         <a class="button">

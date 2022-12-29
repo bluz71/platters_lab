@@ -3,10 +3,8 @@ class AlbumsSelect {
     this.setEventHandlers()
 
     // Bind 'this' for callback functions.
-    this.searchClick = this.searchClick.bind(this)
     this.filterClick = this.filterClick.bind(this)
     this.filterSelectClick = this.filterSelectClick.bind(this)
-    this.searchFocus = this.searchFocus.bind(this)
   }
 
   setEventHandlers () {

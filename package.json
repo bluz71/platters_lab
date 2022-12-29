@@ -2,6 +2,7 @@
   "name": "platters_lab",
   "private": true,
   "dependencies": {
+    "@alpinejs/collapse": "^3.10.5",
     "@creativebulma/bulma-divider": "^1.1.0",
     "@creativebulma/bulma-tooltip": "1.2.0",
     "@hotwired/turbo-rails": "^7.1.0",

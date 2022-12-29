@@ -10,9 +10,11 @@ import '@hotwired/turbo-rails'
 
 // Alpine.js import and global exposure.
 import Alpine from 'alpinejs'
+import collapse from '@alpinejs/collapse'
 
 window.Alpine = Alpine
 Alpine.start()
+Alpine.plugin(collapse)
 
 // jQuery import and global exposure.
 const jQuery = require('jquery')
@@ -24,7 +26,6 @@ require('@rails/ujs').start()
 // Event handlers to run once the DOM is ready.
 $(() => {
   /* eslint-disable no-new */
-  new ArtistsSelect()
   new AlbumsSelect()
   new UserForm()
   new CommentInteraction()
