@@ -1,4 +1,3 @@
-import ArtistsSelect from './src/ArtistsSelect'
 import AlbumsSelect from './src/AlbumsSelect'
 import UserForm from './src/UserForm'
 import CommentInteraction from './src/CommentInteraction'

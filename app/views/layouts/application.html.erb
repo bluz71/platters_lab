@@ -14,7 +14,12 @@
     <%= render "layouts/header" %>
     <div id="flash-messages">
       <% flash.each do |message_type, message| %>
-        <div class="notification is-<%= message_type == "alert" ? "danger" : "link" %>" x-data x-ref="flash" x-init="setTimeout(() => { $refs.flash.remove() }, 4500)">
+        <div class="notification is-<%= message_type == "alert" ? "danger" : "link" %>"
+             x-data="{ visible: true }"
+             x-show="visible"
+             x-transition.duration.500ms
+             x-ref="flash"
+             x-init="setTimeout(() => { visible = false; setTimeout(() => { $refs.flash.remove() }, 500); }, 4500)">
           <button class="delete" @click="$refs.flash.remove()"></button>
           <% if message_type == "alert" %>
             <%= fa_icon "warning fw" %>
