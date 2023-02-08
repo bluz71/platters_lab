@@ -1,4 +1,3 @@
-import AlbumsSelect from './src/AlbumsSelect'
 import UserForm from './src/UserForm'
 import CommentInteraction from './src/CommentInteraction'
 import TracksVisibility from './src/TracksVisibility'
@@ -25,7 +24,6 @@ require('@rails/ujs').start()
 // Event handlers to run once the DOM is ready.
 $(() => {
   /* eslint-disable no-new */
-  new AlbumsSelect()
   new UserForm()
   new CommentInteraction()
   new TracksVisibility()

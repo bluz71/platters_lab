@@ -1,5 +1,5 @@
 <section id="albums" class="section">
-  <div class="container" x-data="{ searchOpen: false }">
+  <div class="container" x-data="{ searchOpen: false, filterOpen: false }">
     <h1 class="title">Albums</h1>
     <h2 class="subtitle mb-0">(1,266 Albums)</h2>
     <div class="divider"></div>
@@ -16,19 +16,19 @@
           </a>
         </li>
         <li>
-          <a class="pagination-link has-tooltip-arrow" data-behavior="album-filter-link-target" data-tooltip="Filter">
+          <a class="pagination-link has-tooltip-arrow" data-tooltip="Filter" @click="filterOpen = !filterOpen; searchOpen = false">
             <%= fa_icon "filter" %>
           </a>
         </li>
         <li>
-          <a class="pagination-link has-tooltip-arrow" data-tooltip="Search" @click="searchOpen = !searchOpen; $nextTick(() => $refs.searchInput.focus());">
+          <a class="pagination-link has-tooltip-arrow" data-tooltip="Search" @click="searchOpen = !searchOpen; filterOpen = false; $nextTick(() => $refs.searchInput.focus());">
             <%= fa_icon "search" %>
           </a>
         </li>
       </ul>
     </nav>
 
-    <div class="columns filter" data-behavior="album-filter-form-target" style="display: none;">
+    <div class="columns filter" x-show="filterOpen" x-collapse.duration.300ms>
       <div class="column has-text-centered is-one-fifth">
         <div class="field">
           <label class="label is-small has-text-grey">Genre</label>
@@ -1046,23 +1046,23 @@
             <div class="media-left">
               <figure class="image is-128x128">
                 <%= link_to album_path do %>
-                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/50/small_Alice_Cooper--Schools_Out.jpg">
+                  <img src="https://82960681ee8c5d1f8608-075754e5d6db374fc82a52ca382cd333.ssl.cf4.rackcdn.com/uploads/album/cover/42/Alice_Cooper--Billion_Dollar_Babies.jpg">
                 <% end %>
               </figure>
             </div>
             <div class="media-content">
               <div class="has-text-centered has-text-weight-light">
                 <div class="is-size-3 is-overflowed">
-                  <%= link_to "School's Out", album_path %>
+                  <%= link_to "Billion Dollar Babies", album_path %>
                 </div>
                 <div class="is-size-5 is-overflowed">
                   by
                   <%= link_to "Alice Cooper", artist_path %>
-                  <span class="is-size-6 has-text-grey">(9 tracks)</span>
+                  <span class="is-size-6 has-text-grey">(10 tracks)</span>
                 </div>
                 <div class="is-size-7 mt-2">
                   <%= link_to albums_path do %>
-                    <%= fa_icon "calendar", text: "1978" %>
+                    <%= fa_icon "calendar", text: "1973" %>
                   <% end %>
                   <%= link_to albums_path do %>
                     <%= fa_icon "tag", text: "Classic Rock", class: "ml-2" %>
@@ -1074,12 +1074,12 @@
               </div>
               <div class="content">
                 <ul class="is-size-7">
-                  <li>1. School&#39;s Out</li>
-                  <li>2. Luney Tune</li>
-                  <li>3. Gutter Cat Vs. The Jets</li>
-                  <li>4. Street Fight</li>
-                  <li>5. Blue Turk</li>
-                  <li>6. My Stars</li>
+                  <li>1. Hello Hooray</li>
+                  <li>2. Raped And Freezin'</li>
+                  <li>3. Elected</li>
+                  <li>4. Billion Dollar Babies</li>
+                  <li>5. Unfinished Sweet</li>
+                  <li>6. No More Mister Nice Guy</li>
                   <li>...</li>
                 </ul>
               </div>
