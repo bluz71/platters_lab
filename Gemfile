@@ -1,15 +1,15 @@
 source "https://rubygems.org"
 
-ruby "2.7.3"
+ruby "3.2.1"
 
-gem "rails", "~> 6.1", ">= 6.1.4.6"
+gem "rails", "~> 6.1", ">= 6.1.7.2"
 gem "sqlite3", "~> 1.4"
-gem "puma", "~> 5.6", ">= 5.6.2"
+gem "puma", "~> 6.1"
 gem "sass-rails", ">= 6"
 gem "cssbundling-rails", "~> 1.1"
 gem "jsbundling-rails", "~> 1.0", ">= 1.0.2"
-gem "jbuilder", "~> 2.7"
-gem "bootsnap", ">= 1.4.2", require: false
+gem "jbuilder", "~> 2.11", ">= 2.11.5"
+gem "bootsnap", "~> 1.16", require: false
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
 
 group :development, :test do
