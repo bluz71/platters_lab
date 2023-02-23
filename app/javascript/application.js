@@ -1,7 +1,6 @@
 import UserForm from './src/UserForm'
 import CommentInteraction from './src/CommentInteraction'
 import TracksVisibility from './src/TracksVisibility'
-import GenreModal from './src/GenreModal'
 
 // Third-party packages.
 import '@hotwired/turbo-rails'
@@ -27,6 +26,5 @@ $(() => {
   new UserForm()
   new CommentInteraction()
   new TracksVisibility()
-  new GenreModal()
   /* eslint-enable no-new */
 })
