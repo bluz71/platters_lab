@@ -53,19 +53,38 @@
             </div>
           </div>
 
-          <div class="field is-horizontal">
+          <div class="field is-horizontal" x-data="{
+              name: '',
+              alert: '',
+              message: 'An account name needs to be between 4 to 20 characters made up only of letters, digits and hyphens.',
+              checkName() {
+                if (this.name.length < 4 || this.name.length > 20) {
+                  this.alert = 'is-danger'
+                  this.message = 'Account name must be between 4 and 20 characters long'
+                }
+                else if (this.name.match(/^[\w-]+$/) === null) {
+                  this.alert = 'is-danger'
+                  this.message = 'Account name must contain only letters, digits and hypens'
+                }
+              },
+              defaultState() {
+                this.alert = ''
+                this.message = 'An account name needs to be between 4 to 20 characters made up only of letters, digits and hyphens.'
+              }
+            }"
+          >
             <div class="field-label is-normal">
               <label class="label">Account Name</label>
             </div>
             <div class="field-body">
               <div class="field has-addon">
                 <p class="control has-icons-left">
-                  <input class="input" type="text" data-behavior="new-account-name-target">
+                  <input class="input" type="text" x-model='name' :class="alert" @blur="checkName" @focus="defaultState">
                   <span class="icon is-small is-left">
                     <%= fa_icon "user" %>
                   </span>
                 </p>
-                <p class="help" data-behavior="new-account-name-help-target">An account name needs to be between 4 to 20 characters made up only of letters, digits and hyphens.</p>
+                <p class="help" :class="alert" x-text="message"></p>
               </div>
             </div>
           </div>

@@ -1,4 +1,3 @@
-import UserForm from './src/UserForm'
 import CommentInteraction from './src/CommentInteraction'
 import TracksVisibility from './src/TracksVisibility'
 
@@ -9,9 +8,9 @@ import '@hotwired/turbo-rails'
 import Alpine from 'alpinejs'
 import collapse from '@alpinejs/collapse'
 
+Alpine.plugin(collapse)
 window.Alpine = Alpine
 Alpine.start()
-Alpine.plugin(collapse)
 
 // jQuery import and global exposure.
 const jQuery = require('jquery')
@@ -23,7 +22,6 @@ require('@rails/ujs').start()
 // Event handlers to run once the DOM is ready.
 $(() => {
   /* eslint-disable no-new */
-  new UserForm()
   new CommentInteraction()
   new TracksVisibility()
   /* eslint-enable no-new */
