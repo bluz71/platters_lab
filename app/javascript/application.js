@@ -1,5 +1,4 @@
 import CommentInteraction from './src/CommentInteraction'
-import TracksVisibility from './src/TracksVisibility'
 
 // Third-party packages.
 import '@hotwired/turbo-rails'
@@ -23,6 +22,5 @@ require('@rails/ujs').start()
 $(() => {
   /* eslint-disable no-new */
   new CommentInteraction()
-  new TracksVisibility()
   /* eslint-enable no-new */
 })
