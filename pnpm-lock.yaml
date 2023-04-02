@@ -13,7 +13,6 @@ specifiers:
   bulmaswatch: ^0.8.1
   esbuild: ^0.14.29
   font-awesome: 4.7.0
-  jquery: ^3.5.0
   sass: ^1.49.9
 
 dependencies:
@@ -29,7 +28,6 @@ dependencies:
   bulmaswatch: 0.8.1
   esbuild: 0.14.54
   font-awesome: 4.7.0
-  jquery: 3.6.3
   sass: 1.58.0
 
 packages:
@@ -406,10 +404,6 @@ packages:
   /is-number/7.0.0:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
-    dev: false
-
-  /jquery/3.6.3:
-    resolution: {integrity: sha512-bZ5Sy3YzKo9Fyc8wH2iIQK4JImJ6R0GWI9kL1/k7Z91ZBNgkRXE6U0JfHIizZbort8ZunhSI3jw9I6253ahKfg==}
     dev: false
 
   /normalize-path/3.0.0:
