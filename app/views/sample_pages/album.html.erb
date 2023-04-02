@@ -153,23 +153,36 @@
         <h3 class="subtitle is-size-6 mb-0">(30 Comments)</h3>
         <div class="divider"></div>
         <% if signed_in? %>
-          <div class="field">
-            <div class="control">
-              <textarea class="textarea" rows="3" placeholder="Write a comment..." data-behavior="comment-write"></textarea>
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <div class="is-pulled-right">
-                <span id="comment-length" data-behavior="comment-length"><%= fa_icon "plus-square-o", text: "280" %></span>
-                <button class="button is-link" data-behavior="comment-post" disabled>
-                  <span class="icon is-small">
-                    <%= fa_icon "pencil" %>
-                  </span>
-                  <span>Post it</span>
-                </button>
+          <div class="field" x-data="{
+              comment: '',
+              commentDetails() {
+                if (this.comment.length > 280) {
+                  return '<i class=\'fa fa-minus-square-o\'></i> ' + -(280 - this.comment.length)
+                }
+                else {
+                  return '<i class=\'fa fa-plus-square-o\'></i> ' + (280 - this.comment.length)
+                }
+              },
+            }"
+          >
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" rows="3" placeholder="Write a comment..." x-model="comment"></textarea>
               </div>
-              <div class="is-clearfix"></div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <div class="is-pulled-right">
+                  <span id="comment-length" :class="comment.length <= 280 || 'comment-error'" x-html="commentDetails"></span>
+                  <button class="button is-link" :disabled="comment.length == 0 || comment.length > 280">
+                    <span class="icon is-small">
+                      <%= fa_icon "pencil" %>
+                    </span>
+                    <span>Post it</span>
+                  </button>
+                </div>
+                <div class="is-clearfix"></div>
+              </div>
             </div>
           </div>
         <% end %>
