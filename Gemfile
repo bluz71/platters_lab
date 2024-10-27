@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "3.2.5"
 
-gem "rails", "~> 6.1", ">= 6.1.7.2"
+gem "rails", "~> 6.1", ">= 6.1.7.10"
 gem "sqlite3", "~> 1.4"
 gem "puma", "~> 6.1"
 gem "sass-rails", ">= 6"
@@ -25,7 +25,7 @@ group :development do
 end
 
 group :test do
-  gem "capybara", ">= 2.15"
+  gem "capybara", "~> 3.39.2"
   gem "selenium-webdriver"
   gem "webdrivers"
 end
