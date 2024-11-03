@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.2.5"
+ruby "3.3.4"
 
 gem "rails", "~> 6.1", ">= 6.1.7.10"
 gem "sqlite3", "~> 1.4"
@@ -9,8 +9,12 @@ gem "sass-rails", ">= 6"
 gem "cssbundling-rails"
 gem "jsbundling-rails"
 gem "jbuilder", "~> 2.11", ">= 2.11.5"
-gem "bootsnap", "~> 1.16", require: false
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
+gem "bootsnap", "~> 1.18", ">= 1.18.4", require: false
+# Add the following three Gems to fix bootsnap warnings.
+gem "mutex_m", "~> 0.2.0"
+gem "base64", "~> 0.2.0"
+gem "bigdecimal", "~> 3.1", ">= 3.1.8"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
