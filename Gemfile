@@ -17,7 +17,7 @@ gem "base64", "~> 0.2.0"
 gem "bigdecimal", "~> 3.1", ">= 3.1.8"
 
 group :development, :test do
-  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "hirb", require: false
 end
 
 group :development do
