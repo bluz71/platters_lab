@@ -15,6 +15,9 @@ gem "bootsnap", "~> 1.18", ">= 1.18.4", require: false
 gem "mutex_m", "~> 0.2.0"
 gem "base64", "~> 0.2.0"
 gem "bigdecimal", "~> 3.1", ">= 3.1.8"
+gem "ostruct", "~> 0.6.1"
+gem "logger", "~> 1.6", ">= 1.6.1"
+gem "fiddle", "~> 1.1", ">= 1.1.5"
 
 group :development, :test do
   gem "hirb", require: false
@@ -24,8 +27,9 @@ group :development do
   gem "web-console", ">= 3.3.0"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "pry-rails"
-  gem "pry-byebug"
-  gem "pry-doc", require: false
+  gem "pry-doc"
+  gem "pry-byebug", git: "https://github.com/andrehjr/pry-byebug.git", branch: "allow-latest-pry"
+  gem "amazing_print"
 end
 
 group :test do
