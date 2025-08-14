@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.4.5"
+ruby "3.3.9"
 
 gem "rails", "~> 6.1", ">= 6.1.7.10"
 gem "sqlite3", "~> 1.4"
@@ -28,7 +28,7 @@ group :development do
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "pry-rails"
   gem "pry-doc", require: false
-  gem "pry-byebug", git: "https://github.com/andrehjr/pry-byebug.git", branch: "allow-latest-pry", require: false
+  gem "pry-byebug", require: false
   gem "amazing_print", require: false
 end
 
