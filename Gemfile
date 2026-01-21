@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.3.9"
+ruby "4.0.1"
 
 gem "rails", "~> 6.1", ">= 6.1.7.10"
 gem "sqlite3", "~> 1.4"
@@ -11,13 +11,15 @@ gem "jsbundling-rails"
 gem "jbuilder", "~> 2.11", ">= 2.11.5"
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
 gem "bootsnap", "~> 1.18", ">= 1.18.4", require: false
-# Add the following three Gems to fix bootsnap warnings.
+# Add the following Gems to fix bootsnap & Ruby version upgrade warnings.
 gem "mutex_m", "~> 0.2.0"
 gem "base64", "~> 0.2.0"
 gem "bigdecimal", "~> 3.1", ">= 3.1.8"
 gem "ostruct", "~> 0.6.1"
 gem "logger", "~> 1.6", ">= 1.6.1"
 gem "fiddle", "~> 1.1", ">= 1.1.5"
+gem "benchmark", "~> 0.4.1"
+gem "tsort", "~> 0.2.0"
 
 group :development, :test do
   gem "hirb", require: false
